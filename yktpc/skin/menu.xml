@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Window showshadow="true" shadowimage="image/shadow.png" shadowcorner="23,13,23,33">
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="12" bold="true" />
+  <Default name="Menu" value="itemtextpadding=&quot;30,2,0,0&quot; bkcolor=&quot;0xFFFFFFFF&quot; hole=&quot;false&quot; itemselectedbkcolor=&quot;0xFF99CCFF&quot;" />
+  <Menu>
+    <MenuElement name="m_homework" width="100" height="30" text="教室作业" icon="image/icon.png" iconsize="18,16" />
+  </Menu>
+</Window>

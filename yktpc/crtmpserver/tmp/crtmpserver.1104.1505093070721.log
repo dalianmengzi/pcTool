@@ -1,0 +1,223 @@
+PID: 1104; TIMESTAMP: 1505093070(null)
+C++ RTMP Media Server (www.rtmpd.com) build  - (built on )1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:448:Initialize:C++ RTMP Media Server (www.rtmpd.com) build  - (built on )
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:451:Initialize:OS files descriptors count limits: 2048/2048
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:453:Initialize:Initialize I/O handlers manager: select
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:456:Initialize:Configure modules
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module D:\project\player_hw_zjy\build\Release\crtmpserver\applications\appselector\appselector.dll loaded
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module D:\project\player_hw_zjy\build\Release\crtmpserver\applications\meetone\meetone.dll loaded
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module D:\project\player_hw_zjy\build\Release\crtmpserver\applications\proxypublish\proxypublish.dll loaded
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:462:Initialize:Plug in the default protocol factory
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:469:Initialize:Configure factories
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:97:Module::ConfigFactory:Loaded factory from application proxypublish
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:475:Initialize:Configure acceptors
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 0->1 IOHT_ACCEPTOR
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 1->2 IOHT_ACCEPTOR
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 2->3 IOHT_ACCEPTOR
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 3->4 IOHT_ACCEPTOR
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:481:Initialize:Configure instances
+1505093070:2:..\..\..\sources\thelib\src\configuration\configfile.cpp:185:ConfigFile::ConfigInstances:Windows doesn't support multiple instances
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:487:Initialize:Start I/O handlers manager: select
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:490:Initialize:Configure applications
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application appselector instantiated
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application meetone instantiated
+1505093070:2:..\..\..\sources\thelib\src\mediaformats\readers\streammetadataresolver.cpp:174:StreamMetadataResolver::InitializeStorage:Specified metaFolder not found: ./tmp/metadata
+1505093070:2:..\..\..\sources\thelib\src\mediaformats\readers\streammetadataresolver.cpp:119:StreamMetadataResolver::Initialize:Storage failed to initialize storage storageRecord
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 4->5 IOHT_TIMER
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 5->6 IOHT_TIMER
+1505093070:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application proxypublish instantiated
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 6->7 IOHT_TIMER
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:496:Initialize:Install the quit signal
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:507:Run:\n+-----------------------------------------------------------------------------+\n|                                                                     Services|\n+---+---------------+-----+-------------------------+-------------------------+\n| c |      ip       | port|   protocol stack name   |     application name    |\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 1935|              inboundRtmp|              appselector|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 1935|           inboundLiveFlv|                  meetone|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 6665|              inboundRtmp|             proxypublish|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 6666|         httpEchoProtocol|             proxypublish|\n+---+---------------+-----+-------------------------+-------------------------+
+1505093070:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:508:Run:GO! GO! GO! (1104)
+1505093070:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 7->8 IOHT_TCP_CARRIER
+1505093070:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2939; Near: 172.16.11.103:1935) CTCP(604) <-> TCP(4) <-> [IR(5)]
+1505093070:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093070:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2939; Near: 172.16.11.103:1935) CTCP(604) <-> TCP(4) <-> [IR(5)] unregistered from application: appselector
+1505093070:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 1, type: NR
+1505093070:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093197:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093197:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.72:48831; Near: 172.16.11.103:1935) CTCP(968) <-> TCP(6) <-> [IR(7)]
+1505093197:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093197:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.72:48831; Near: 172.16.11.103:1935) CTCP(968) <-> TCP(6) <-> [IR(7)] unregistered from application: appselector
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 2, type: NR
+1505093197:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 2, type: NR
+1505093197:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream INR(3) with name `1000/deskshare-1505093196816` from protocol IR(7) registered to application `meetone`
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 3, type: INR
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 1, type: NR
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 4, type: NR
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 4, type: NR
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 5, type: NR
+1505093197:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -2000; length: -1000. Protocol: (Far: 172.16.11.103:2939; Near: 172.16.11.103:1935) CTCP(604) <-> TCP(4) <-> [IR(5)]
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 5, type: NR
+1505093197:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(6) with name `1000/deskshare-1505093196816` from protocol IR(5) registered to application `meetone`
+1505093197:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 6, type: ONR4R
+1505093197:2:..\..\..\sources\thelib\src\streaming\baseoutstream.cpp:444:BaseOutStream::GenericStreamCapabilitiesChanged:Audio codec AUNK not supported by stream type ONR4R
+1505093234:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(6) with name `1000/deskshare-1505093196816` from protocol IR(5) unregistered from application `meetone`
+1505093234:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 6, type: ONR4R
+1505093234:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2939; Near: 172.16.11.103:1935) CTCP(604) <-> [TCP(4)] <-> IR(5). Error was (10054): Unknown error
+1505093234:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093234:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(5)] unregistered from application: meetone
+1505093235:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093235:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2962; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(8) <-> [IR(9)]
+1505093235:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093235:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2962; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(8) <-> [IR(9)] unregistered from application: appselector
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 7, type: NR
+1505093235:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 7, type: NR
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 8, type: NR
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 8, type: NR
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 9, type: NR
+1505093235:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2962; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(8) <-> [IR(9)]
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 9, type: NR
+1505093235:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(10) with name `1000/deskshare-1505093196816` from protocol IR(9) registered to application `meetone`
+1505093235:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 10, type: ONR4R
+1505093253:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(10) with name `1000/deskshare-1505093196816` from protocol IR(9) unregistered from application `meetone`
+1505093253:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 10, type: ONR4R
+1505093253:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2962; Near: 172.16.11.103:1935) CTCP(916) <-> [TCP(8)] <-> IR(9). Error was (10054): Unknown error
+1505093253:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093253:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(9)] unregistered from application: meetone
+1505093254:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093254:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2963; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(10) <-> [IR(11)]
+1505093254:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093254:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2963; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(10) <-> [IR(11)] unregistered from application: appselector
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 11, type: NR
+1505093254:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 11, type: NR
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 12, type: NR
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 12, type: NR
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 13, type: NR
+1505093254:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2963; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(10) <-> [IR(11)]
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 13, type: NR
+1505093254:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(14) with name `1000/deskshare-1505093196816` from protocol IR(11) registered to application `meetone`
+1505093254:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 14, type: ONR4R
+1505093260:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(14) with name `1000/deskshare-1505093196816` from protocol IR(11) unregistered from application `meetone`
+1505093260:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 14, type: ONR4R
+1505093260:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2963; Near: 172.16.11.103:1935) CTCP(828) <-> [TCP(10)] <-> IR(11). Error was (10054): Unknown error
+1505093260:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093260:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(11)] unregistered from application: meetone
+1505093261:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093261:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2964; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(12) <-> [IR(13)]
+1505093261:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093261:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2964; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(12) <-> [IR(13)] unregistered from application: appselector
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 15, type: NR
+1505093261:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 15, type: NR
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 16, type: NR
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 16, type: NR
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 17, type: NR
+1505093261:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2964; Near: 172.16.11.103:1935) CTCP(828) <-> TCP(12) <-> [IR(13)]
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 17, type: NR
+1505093261:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(18) with name `1000/deskshare-1505093196816` from protocol IR(13) registered to application `meetone`
+1505093261:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 18, type: ONR4R
+1505093266:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(18) with name `1000/deskshare-1505093196816` from protocol IR(13) unregistered from application `meetone`
+1505093266:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 18, type: ONR4R
+1505093266:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2964; Near: 172.16.11.103:1935) CTCP(828) <-> [TCP(12)] <-> IR(13). Error was (10054): Unknown error
+1505093266:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093266:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(13)] unregistered from application: meetone
+1505093267:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093267:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2965; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(14) <-> [IR(15)]
+1505093267:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093267:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2965; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(14) <-> [IR(15)] unregistered from application: appselector
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 19, type: NR
+1505093267:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 19, type: NR
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 20, type: NR
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 20, type: NR
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 21, type: NR
+1505093267:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2965; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(14) <-> [IR(15)]
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 21, type: NR
+1505093267:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(22) with name `1000/deskshare-1505093196816` from protocol IR(15) registered to application `meetone`
+1505093267:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 22, type: ONR4R
+1505093272:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(22) with name `1000/deskshare-1505093196816` from protocol IR(15) unregistered from application `meetone`
+1505093272:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 22, type: ONR4R
+1505093272:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2965; Near: 172.16.11.103:1935) CTCP(916) <-> [TCP(14)] <-> IR(15). Error was (10054): Unknown error
+1505093272:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093272:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(15)] unregistered from application: meetone
+1505093273:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093273:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2966; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(16) <-> [IR(17)]
+1505093273:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093273:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2966; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(16) <-> [IR(17)] unregistered from application: appselector
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 23, type: NR
+1505093273:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 23, type: NR
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 24, type: NR
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 24, type: NR
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 25, type: NR
+1505093273:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2966; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(16) <-> [IR(17)]
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 25, type: NR
+1505093273:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(26) with name `1000/deskshare-1505093196816` from protocol IR(17) registered to application `meetone`
+1505093273:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 26, type: ONR4R
+1505093278:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(26) with name `1000/deskshare-1505093196816` from protocol IR(17) unregistered from application `meetone`
+1505093278:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 26, type: ONR4R
+1505093278:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2966; Near: 172.16.11.103:1935) CTCP(916) <-> [TCP(16)] <-> IR(17). Error was (10054): Unknown error
+1505093278:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093278:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(17)] unregistered from application: meetone
+1505093279:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093279:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2967; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(18) <-> [IR(19)]
+1505093279:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093279:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2967; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(18) <-> [IR(19)] unregistered from application: appselector
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 27, type: NR
+1505093279:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 27, type: NR
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 28, type: NR
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 28, type: NR
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 29, type: NR
+1505093279:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2967; Near: 172.16.11.103:1935) CTCP(916) <-> TCP(18) <-> [IR(19)]
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 29, type: NR
+1505093279:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(30) with name `1000/deskshare-1505093196816` from protocol IR(19) registered to application `meetone`
+1505093279:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 30, type: ONR4R
+1505093284:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(30) with name `1000/deskshare-1505093196816` from protocol IR(19) unregistered from application `meetone`
+1505093284:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 30, type: ONR4R
+1505093284:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2967; Near: 172.16.11.103:1935) CTCP(916) <-> [TCP(18)] <-> IR(19). Error was (10054): Unknown error
+1505093284:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093284:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(19)] unregistered from application: meetone
+1505093285:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093285:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2968; Near: 172.16.11.103:1935) CTCP(608) <-> TCP(20) <-> [IR(21)]
+1505093285:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093285:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2968; Near: 172.16.11.103:1935) CTCP(608) <-> TCP(20) <-> [IR(21)] unregistered from application: appselector
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 31, type: NR
+1505093285:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 31, type: NR
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 32, type: NR
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 32, type: NR
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 33, type: NR
+1505093285:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2968; Near: 172.16.11.103:1935) CTCP(608) <-> TCP(20) <-> [IR(21)]
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 33, type: NR
+1505093285:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(34) with name `1000/deskshare-1505093196816` from protocol IR(21) registered to application `meetone`
+1505093285:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 34, type: ONR4R
+1505093290:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(34) with name `1000/deskshare-1505093196816` from protocol IR(21) unregistered from application `meetone`
+1505093290:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 34, type: ONR4R
+1505093290:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2968; Near: 172.16.11.103:1935) CTCP(608) <-> [TCP(20)] <-> IR(21). Error was (10054): Unknown error
+1505093290:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093290:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(21)] unregistered from application: meetone
+1505093291:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093291:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2969; Near: 172.16.11.103:1935) CTCP(1016) <-> TCP(22) <-> [IR(23)]
+1505093291:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093291:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2969; Near: 172.16.11.103:1935) CTCP(1016) <-> TCP(22) <-> [IR(23)] unregistered from application: appselector
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 35, type: NR
+1505093291:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 35, type: NR
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 36, type: NR
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 36, type: NR
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 37, type: NR
+1505093291:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1505093196816`. Start: -1000; length: -1000. Protocol: (Far: 172.16.11.103:2969; Near: 172.16.11.103:1935) CTCP(1016) <-> TCP(22) <-> [IR(23)]
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 37, type: NR
+1505093291:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(38) with name `1000/deskshare-1505093196816` from protocol IR(23) registered to application `meetone`
+1505093291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 38, type: ONR4R
+1505093304:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(38) with name `1000/deskshare-1505093196816` from protocol IR(23) unregistered from application `meetone`
+1505093304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 38, type: ONR4R
+1505093304:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.103:2969; Near: 172.16.11.103:1935) CTCP(1016) <-> [TCP(22)] <-> IR(23). Error was (10054): Unknown error
+1505093304:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093304:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(23)] unregistered from application: meetone
+1505093304:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1505093304:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 172.16.11.103:2971; Near: 172.16.11.103:1935) CTCP(920) <-> TCP(24) <-> [IR(25)]
+1505093304:6:..\..\..\sources\applications\appselector\src\rtmpappprotocolhandler.cpp:88:app_appselector::RTMPAppProtocolHandler::ProcessInvokeConnect:Selected application: meetone (encoder)
+1505093304:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol (Far: 172.16.11.103:2971; Near: 172.16.11.103:1935) CTCP(920) <-> TCP(24) <-> [IR(25)] unregistered from application: appselector
+1505093304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 39, type: NR
+1505093304:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1505093304:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream INR(3) with name `1000/deskshare-1505093196816` from protocol IR(7) unregistered from application `meetone`
+1505093304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 3, type: INR
+1505093304:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 172.16.11.72:48831; Near: 172.16.11.103:1935) CTCP(968) <-> [TCP(6)] <-> IR(7). Error was (10054): Unknown error
+1505093304:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1505093304:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(7)] unregistered from application: meetone

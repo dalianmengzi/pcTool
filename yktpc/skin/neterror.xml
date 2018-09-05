@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="440,84" roundcorner="4,4">
+	<Font shared="true" id="0" name="微软雅黑" size="18" />
+	<Font shared="true" id="1" name="微软雅黑" size="22" />
+    <VerticalLayout enabled="true" width="440" height="84" bkcolor="#FF000000">
+		
+		<Control enabled="true" height="8" />
+					
+		<HorizontalLayout enabled="true" height="18">
+			<Control enabled="true"/>
+			<Button name="exitneterror" enabled="true" text="x" width="18" font="0" textcolor="#FFFFFFFF" />
+			<Control enabled="true" width="8" />
+        </HorizontalLayout>		
+		
+		<HorizontalLayout enabled="true" height="50">
+			<Control enabled="true" width="40" />			
+			<GifAnim name="connect_tip" width="50" height="50" bkimage="image\jiazai.gif" auto="true"/>			
+			<Control enabled="true" width="10" />
+			<Label name="LabelWifi" text="连接不可用,请尝试重新扫描!" align="center" textcolor="#FFFFFF" font="1" width="300" height="50"/>
+			<Control enabled="true" width="8" />
+        </HorizontalLayout>
+		
+    </VerticalLayout>
+</Window>

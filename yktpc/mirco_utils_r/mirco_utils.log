@@ -1,0 +1,83 @@
+﻿生成启动时间为 2018/5/31 15:56:50。
+     1>项目“F:\PCTP\66TPFull\投屏通\build\mirco_utils.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"../3rd/openssl-0.9.8/include" /I../3rd/curl/include /I../3rd/opencv/include /I../3rd/librtmp/ /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _CRT_NON_CONFORMING_SWPRINTFS /D _WINDOWS /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\mirco_utils_r\\" /Fd"Release\mirco_utils_r\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\mirco_utils\common\audio.cpp ..\mirco_utils\common\cryptohelper.cpp ..\mirco_utils\common\dirent.cpp ..\mirco_utils\common\DiskId32.cpp ..\mirco_utils\common\file_utils.cpp ..\mirco_utils\common\json_utils.cpp ..\mirco_utils\common\mini_dump.cpp ..\mirco_utils\common\mutlicast.cpp ..\mirco_utils\common\net_utils.cpp ..\mirco_utils\common\os_utils.cpp ..\mirco_utils\common\process_utils.cpp ..\mirco_utils\common\QRCreator.cpp ..\mirco_utils\common\reg_utils.cpp ..\mirco_utils\common\sqlite.cpp ..\mirco_utils\common\string_utils.cpp ..\mirco_utils\common\utils.cpp ..\mirco_utils\common\winapi.cpp ..\mirco_utils\common\wmiInfo.cpp ..\mirco_utils\common\xml_utils.cpp ..\mirco_utils\common\zip_util.cpp ..\mirco_utils\net\easywsclient.cpp ..\mirco_utils\net\http_download.cpp ..\mirco_utils\net\ws_pdu.cpp
+     1>cl : 命令行 warning D9025: 正在重写“/sdl”(用“/GS-”)
+         audio.cpp
+         cryptohelper.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\cryptohelper.cpp(159): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\cryptohelper.cpp(186): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\cryptohelper.cpp(375): warning C4018: “>”: 有符号/无符号不匹配
+         dirent.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\dirent.cpp(61): warning C4244: “=”: 从“DWORD”转换到“unsigned short”，可能丢失数据
+         DiskId32.cpp
+         file_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\file_utils.cpp(635): warning C4244: “参数”: 从“__int64”转换到“long”，可能丢失数据
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\file_utils.cpp(636): warning C4244: “参数”: 从“__int64”转换到“size_t”，可能丢失数据
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\file_utils.cpp(639): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\file_utils.cpp(947): warning C4244: “参数”: 从“std::streamsize”转换到“uint32”，可能丢失数据
+         json_utils.cpp
+         mini_dump.cpp
+         mutlicast.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\mutlicast.cpp(138): warning C4101: “local”: 未引用的局部变量
+         net_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\net_utils.cpp(323): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+         os_utils.cpp
+         process_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\process_utils.cpp(196): warning C4101: “cProcesses”: 未引用的局部变量
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\process_utils.cpp(249): warning C4101: “cProcesses”: 未引用的局部变量
+         QRCreator.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\qrcreator.cpp(3): warning C4103: “f:\pctp\66tpfull\投屏通\mirco_utils\common\qrcreator.cpp”: 包括标题后更改了对齐方式，可能是由于缺少 #pragma pack(pop)
+         reg_utils.cpp
+         sqlite.cpp
+         string_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\string_utils.cpp(357): warning C4018: “<”: 有符号/无符号不匹配
+         utils.cpp
+         winapi.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\winapi.cpp(66): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\winapi.cpp(229): warning C4018: “<”: 有符号/无符号不匹配
+         wmiInfo.cpp
+         xml_utils.cpp
+         zip_util.cpp
+         正在生成代码...
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\winapi.cpp(220): warning C4715: “WinUtils::SetRegValue”: 不是所有的控件路径都返回值
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\common\process_utils.cpp(290): warning C4715: “CProcessUtils::getProcessPid”: 不是所有的控件路径都返回值
+         正在编译...
+         easywsclient.cpp
+         http_download.cpp
+         ws_pdu.cpp
+     1>f:\pctp\66tpfull\投屏通\mirco_utils\net\ws_pdu.cpp(111): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1299,5): warning MSB8012: TargetPath(F:\PCTP\66TPFull\投屏通\build\Release\mirco_utils.lib) does not match the Library's OutputFile property value (F:\PCTP\66TPFull\投屏通\build\Release\mirco_utils_r.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1301,5): warning MSB8012: TargetName(mirco_utils) does not match the Library's OutputFile property value (mirco_utils_r). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"F:\PCTP\66TPFull\投屏通\build\Release\mirco_utils_r.lib" /NOLOGO Release\mirco_utils_r\audio.obj
+         Release\mirco_utils_r\cryptohelper.obj
+         Release\mirco_utils_r\dirent.obj
+         Release\mirco_utils_r\DiskId32.obj
+         Release\mirco_utils_r\file_utils.obj
+         Release\mirco_utils_r\json_utils.obj
+         Release\mirco_utils_r\mini_dump.obj
+         Release\mirco_utils_r\mutlicast.obj
+         Release\mirco_utils_r\net_utils.obj
+         Release\mirco_utils_r\os_utils.obj
+         Release\mirco_utils_r\process_utils.obj
+         Release\mirco_utils_r\QRCreator.obj
+         Release\mirco_utils_r\reg_utils.obj
+         Release\mirco_utils_r\sqlite.obj
+         Release\mirco_utils_r\string_utils.obj
+         Release\mirco_utils_r\utils.obj
+         Release\mirco_utils_r\winapi.obj
+         Release\mirco_utils_r\wmiInfo.obj
+         Release\mirco_utils_r\xml_utils.obj
+         Release\mirco_utils_r\zip_util.obj
+         Release\mirco_utils_r\easywsclient.obj
+         Release\mirco_utils_r\http_download.obj
+         Release\mirco_utils_r\ws_pdu.obj
+         mirco_utils.vcxproj -> F:\PCTP\66TPFull\投屏通\build\Release\mirco_utils.lib
+     1>已完成生成项目“F:\PCTP\66TPFull\投屏通\build\mirco_utils.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:27.67

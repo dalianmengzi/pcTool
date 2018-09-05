@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,150" sizebox="4,4,4,4" caption="0,0,0,32" mininfo="200,300">
+    <Font name="微软雅黑" size="15" bold="false" italic="false" />
+    <Font name="微软雅黑" size="15" bold="true" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" default="true" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <VerticalLayout bkcolor="#FFF0F0F0">
+        <HorizontalLayout height="32" bkcolor="#FF0070AA">
+            <Control width="26" height="26" padding="2,3,0,0" bkimage="file=&apos;..\image\set.png&apos;" />
+            <Label name="title" text="设置班级名称" width="100" height="17" padding="2,7,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Control />
+            <Button name="btn_close" padding="0,3,0,0"  width="24" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;..\image\wifi_close.png&apos; " hotimage=" file=&apos;..\image\wifi_close_hov.png&apos; " />
+        </HorizontalLayout>
+        <HorizontalLayout height="26" padding="0,20,0,0">
+        <Control />
+            <Label name="ClassNameLabelUI" text="班级名称："  width="100" height="20" textcolor="#00050505" disabledtextcolor="#FFA7A6AA" font="2" align="center" />
+            <Edit name="class_name" text="智慧课堂" bordersize="1" width="195" height="26" bkcolor="#FFFFFFFF" bordercolor="#FF00A2E6" textpadding="4,3,4,3" textcolor="#FF00A2E6" disabledtextcolor="#FFA7A6AA" font="2" maxchar="8" />
+            <Control />
+        </HorizontalLayout>
+            <HorizontalLayout height="30" padding="0,30,0,0">
+            <Control />
+                <Button name="btn_ok" text="确定" width="80" height="30" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;..\image\btn_ok_nor.png&apos; corner=&apos;4,2,4,2&apos;" hotimage=" file=&apos;..\image\btn_ok_pre.png&apos; " />
+                <Button name="btn_cancel" text="取消" width="80" height="30" padding="20,0,0,0" textcolor="#00050505" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;..\image\btn_cancel_nor.png&apos; corner=&apos;4,2,4,2&apos;" hotimage=" file=&apos;..\image\btn_cancel_pre.png&apos; " />
+                <Control />
+            </HorizontalLayout>
+    </VerticalLayout>
+</Window>

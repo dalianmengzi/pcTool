@@ -1,0 +1,338 @@
+PID: 9376; TIMESTAMP: 1524119164(null)
+C++ RTMP Media Server (www.rtmpd.com) build  - (built on )1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:448:Initialize:C++ RTMP Media Server (www.rtmpd.com) build  - (built on )
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:451:Initialize:OS files descriptors count limits: 2048/2048
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:453:Initialize:Initialize I/O handlers manager: select
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:456:Initialize:Configure modules
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module F:\66TPFull\投屏通\build\Release\crtmpserver\applications\appselector\appselector.dll loaded
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module F:\66TPFull\投屏通\build\Release\crtmpserver\applications\meetone\meetone.dll loaded
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:84:Module::LoadLibraryA:Module F:\66TPFull\投屏通\build\Release\crtmpserver\applications\proxypublish\proxypublish.dll loaded
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:462:Initialize:Plug in the default protocol factory
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:469:Initialize:Configure factories
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:97:Module::ConfigFactory:Loaded factory from application proxypublish
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:475:Initialize:Configure acceptors
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 0->1 IOHT_ACCEPTOR
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 1->2 IOHT_ACCEPTOR
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 2->3 IOHT_ACCEPTOR
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 3->4 IOHT_ACCEPTOR
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:481:Initialize:Configure instances
+1524119164:2:..\..\..\sources\thelib\src\configuration\configfile.cpp:185:ConfigFile::ConfigInstances:Windows doesn't support multiple instances
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:487:Initialize:Start I/O handlers manager: select
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:490:Initialize:Configure applications
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application appselector instantiated
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application meetone instantiated
+1524119164:2:..\..\..\sources\thelib\src\mediaformats\readers\streammetadataresolver.cpp:174:StreamMetadataResolver::InitializeStorage:Specified metaFolder not found: ./tmp/metadata
+1524119164:2:..\..\..\sources\thelib\src\mediaformats\readers\streammetadataresolver.cpp:119:StreamMetadataResolver::Initialize:Storage failed to initialize storage storageRecord
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 4->5 IOHT_TIMER
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 5->6 IOHT_TIMER
+1524119164:3:..\..\..\sources\thelib\src\configuration\module.cpp:177:Module::ConfigApplication:Application proxypublish instantiated
+1524119164:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 6->7 IOHT_TIMER
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:496:Initialize:Install the quit signal
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:507:Run:\n+-----------------------------------------------------------------------------+\n|                                                                     Services|\n+---+---------------+-----+-------------------------+-------------------------+\n| c |      ip       | port|   protocol stack name   |     application name    |\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 1935|              inboundRtmp|              appselector|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 1935|           inboundLiveFlv|                  meetone|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 6665|              inboundRtmp|             proxypublish|\n+---+---------------+-----+-------------------------+-------------------------+\n|tcp|        0.0.0.0| 6666|         httpEchoProtocol|             proxypublish|\n+---+---------------+-----+-------------------------+-------------------------+
+1524119164:3:..\..\..\sources\crtmpserver\src\crtmpserver.cpp:508:Run:GO! GO! GO! (9376)
+1524119169:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 7->8 IOHT_TCP_CARRIER
+1524119169:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2124; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(4) <-> [IR(5)]
+1524119169:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524119169:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 1, type: NR
+1524119169:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120175:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120175:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55285; Near: 192.168.1.163:6665) CTCP(1008) <-> TCP(6) <-> [IR(7)]
+1524120177:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120177:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 2, type: NR
+1524120177:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120179:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 2, type: NR
+1524120179:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream INR(3) with name `1000/deskshare-1524120170011` from protocol IR(7) registered to application `proxypublish`
+1524120179:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120179:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 3, type: INR
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 1, type: NR
+1524120181:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 4, type: NR
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 4, type: NR
+1524120181:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 5, type: NR
+1524120181:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120170011`. Start: -2000; length: -1000. Protocol: (Far: 192.168.1.163:2124; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(4) <-> [IR(5)]
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 5, type: NR
+1524120181:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(6) with name `1000/deskshare-1524120170011` from protocol IR(5) registered to application `proxypublish`
+1524120181:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120181:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 6, type: ONR4R
+1524120181:2:..\..\..\sources\thelib\src\streaming\baseoutstream.cpp:444:BaseOutStream::GenericStreamCapabilitiesChanged:Audio codec AUNK not supported by stream type ONR4R
+1524120202:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 9->10 IOHT_TCP_CARRIER
+1524120202:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55286; Near: 192.168.1.163:6665) CTCP(908) <-> TCP(8) <-> [IR(9)]
+1524120202:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120202:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 7, type: NR
+1524120202:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120202:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:940:BaseRTMPAppProtocolHandler::ProcessInvokePublish:Stream name deskshare-1524120170011 already occupied and application doesn't allow duplicated inbound network streams
+1524120206:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55285; Near: 192.168.1.163:6665) CTCP(1008) <-> [TCP(6)] <-> IR(7). Error was (10054): Unknown error
+1524120206:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 10->9 IOHT_TCP_CARRIER
+1524120206:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream INR(3) with name `1000/deskshare-1524120170011` from protocol IR(7) unregistered from application `proxypublish`
+1524120206:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 3, type: INR
+1524120206:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(7)] unregistered from application: proxypublish
+1524120206:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 3, type: INR
+1524120207:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:646:BaseRTMPAppProtocolHandler::ProcessNotify:No stream found. Searched for 9:1. Message was:\n<MAP name="" isArray="false">\n    <MAP name="header" isArray="false">\n        <UINT32 name="channelId">4</UINT32>\n        <UINT8 name="headerType">3</UINT8>\n        <BOOL name="isAbsolute">false</BOOL>\n        <UINT32 name="messageLength">259</UINT32>\n        <UINT8 name="messageType">18</UINT8>\n        <UINT32 name="streamId">1</UINT32>\n        <UINT32 name="timestamp">0</UINT32>\n    </MAP>\n    <MAP name="notify" isArray="false">\n        <MAP name="params" isArray="false">\n            <STR name="0x00000000">@setDataFrame</STR>\n            <STR name="0x00000001">onMetaData</STR>\n            <MAP name="0x00000002" isArray="false">\n                <STR name="audiocodecid"></STR>\n                <DOUBLE name="audiodatarate">0.000</DOUBLE>\n                <DOUBLE name="audiosamplerate">0.000</DOUBLE>\n                <DOUBLE name="audiosamplesize">0.000</DOUBLE>\n                <STR name="copyright">firehood</STR>\n                <DOUBLE name="framerate">25.000</DOUBLE>\n                <DOUBLE name="height">800.000</DOUBLE>\n                <DOUBLE name="stereo">0.000</DOUBLE>\n                <STR name="videocodecid"></STR>\n                <DOUBLE name="videodatarate">1065353216.000</DOUBLE>\n                <DOUBLE name="width">1280.000</DOUBLE>\n            </MAP>\n        </MAP>\n    </MAP>\n</MAP>
+1524120207:0:..\..\..\sources\thelib\src\protocols\rtmp\basertmpprotocol.cpp:1022:BaseRTMPProtocol::ProcessBytes:Unable to feed video
+1524120207:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:96:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55286; Near: 192.168.1.163:6665) CTCP(908) <-> [TCP(8)] <-> IR(9). Signaling upper protocols failed
+1524120207:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120207:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 7, type: NR
+1524120207:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(9)] unregistered from application: proxypublish
+1524120207:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 7, type: NR
+1524120211:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(6) with name `1000/deskshare-1524120170011` from protocol IR(5) unregistered from application `proxypublish`
+1524120211:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 6, type: ONR4R
+1524120211:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2124; Near: 192.168.1.163:6665) CTCP(720) <-> [TCP(4)] <-> IR(5). Error was (10054): Unknown error
+1524120211:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 8->7 IOHT_TCP_CARRIER
+1524120211:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(5)] unregistered from application: proxypublish
+1524120212:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 7->8 IOHT_TCP_CARRIER
+1524120212:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2521; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(10) <-> [IR(11)]
+1524120212:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 8, type: NR
+1524120212:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 8, type: NR
+1524120212:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 9, type: NR
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 9, type: NR
+1524120212:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 10, type: NR
+1524120212:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120170011`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2521; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(10) <-> [IR(11)]
+1524120212:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1187:BaseRTMPAppProtocolHandler::ProcessInvokePlay:We are going to wait for the live stream `1000/deskshare-1524120170011` on protocol (Far: 192.168.1.163:2521; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(10) <-> [IR(11)]
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 10, type: NR
+1524120212:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(11) with name `1000/deskshare-1524120170011` from protocol IR(11) registered to application `proxypublish`
+1524120212:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120212:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 11, type: ONR4R
+1524120213:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(11) with name `1000/deskshare-1524120170011` from protocol IR(11) unregistered from application `proxypublish`
+1524120213:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 11, type: ONR4R
+1524120213:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2521; Near: 192.168.1.163:6665) CTCP(720) <-> [TCP(10)] <-> IR(11). Error was (10054): Unknown error
+1524120213:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 8->7 IOHT_TCP_CARRIER
+1524120213:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(11)] unregistered from application: proxypublish
+1524120213:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 7->8 IOHT_TCP_CARRIER
+1524120213:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2522; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(12) <-> [IR(13)]
+1524120213:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120213:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 12, type: NR
+1524120213:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120224:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120224:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55287; Near: 192.168.1.163:6665) CTCP(832) <-> TCP(14) <-> [IR(15)]
+1524120224:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 13, type: NR
+1524120224:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 13, type: NR
+1524120224:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream INR(14) with name `1000/deskshare-1524120222815` from protocol IR(15) registered to application `proxypublish`
+1524120224:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 14, type: INR
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 12, type: NR
+1524120224:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 15, type: NR
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 15, type: NR
+1524120224:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 16, type: NR
+1524120224:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -2000; length: -1000. Protocol: (Far: 192.168.1.163:2522; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(12) <-> [IR(13)]
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 16, type: NR
+1524120224:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(17) with name `1000/deskshare-1524120222815` from protocol IR(13) registered to application `proxypublish`
+1524120224:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120224:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 17, type: ONR4R
+1524120225:2:..\..\..\sources\thelib\src\streaming\baseoutstream.cpp:444:BaseOutStream::GenericStreamCapabilitiesChanged:Audio codec AUNK not supported by stream type ONR4R
+1524120230:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(17) with name `1000/deskshare-1524120222815` from protocol IR(13) unregistered from application `proxypublish`
+1524120230:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 17, type: ONR4R
+1524120230:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2522; Near: 192.168.1.163:6665) CTCP(720) <-> [TCP(12)] <-> IR(13). Error was (10054): Unknown error
+1524120230:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120230:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(13)] unregistered from application: proxypublish
+1524120231:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120231:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2523; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(16) <-> [IR(17)]
+1524120231:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 18, type: NR
+1524120231:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 18, type: NR
+1524120231:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 19, type: NR
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 19, type: NR
+1524120231:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 20, type: NR
+1524120231:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2523; Near: 192.168.1.163:6665) CTCP(720) <-> TCP(16) <-> [IR(17)]
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 20, type: NR
+1524120231:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(21) with name `1000/deskshare-1524120222815` from protocol IR(17) registered to application `proxypublish`
+1524120231:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120231:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 21, type: ONR4R
+1524120249:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(21) with name `1000/deskshare-1524120222815` from protocol IR(17) unregistered from application `proxypublish`
+1524120249:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 21, type: ONR4R
+1524120249:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2523; Near: 192.168.1.163:6665) CTCP(720) <-> [TCP(16)] <-> IR(17). Error was (10054): Unknown error
+1524120249:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120249:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(17)] unregistered from application: proxypublish
+1524120250:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120250:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2529; Near: 192.168.1.163:6665) CTCP(892) <-> TCP(18) <-> [IR(19)]
+1524120250:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 22, type: NR
+1524120250:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 22, type: NR
+1524120250:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 23, type: NR
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 23, type: NR
+1524120250:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 24, type: NR
+1524120250:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2529; Near: 192.168.1.163:6665) CTCP(892) <-> TCP(18) <-> [IR(19)]
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 24, type: NR
+1524120250:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(25) with name `1000/deskshare-1524120222815` from protocol IR(19) registered to application `proxypublish`
+1524120250:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120250:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 25, type: ONR4R
+1524120263:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(25) with name `1000/deskshare-1524120222815` from protocol IR(19) unregistered from application `proxypublish`
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 25, type: ONR4R
+1524120263:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2529; Near: 192.168.1.163:6665) CTCP(892) <-> [TCP(18)] <-> IR(19). Error was (10054): Unknown error
+1524120263:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120263:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(19)] unregistered from application: proxypublish
+1524120263:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120263:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2530; Near: 192.168.1.163:6665) CTCP(892) <-> TCP(20) <-> [IR(21)]
+1524120263:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 26, type: NR
+1524120263:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 26, type: NR
+1524120263:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 27, type: NR
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 27, type: NR
+1524120263:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 28, type: NR
+1524120263:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2530; Near: 192.168.1.163:6665) CTCP(892) <-> TCP(20) <-> [IR(21)]
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 28, type: NR
+1524120263:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(29) with name `1000/deskshare-1524120222815` from protocol IR(21) registered to application `proxypublish`
+1524120263:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120263:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 29, type: ONR4R
+1524120268:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(29) with name `1000/deskshare-1524120222815` from protocol IR(21) unregistered from application `proxypublish`
+1524120268:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 29, type: ONR4R
+1524120268:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2530; Near: 192.168.1.163:6665) CTCP(892) <-> [TCP(20)] <-> IR(21). Error was (10054): Unknown error
+1524120268:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120268:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(21)] unregistered from application: proxypublish
+1524120269:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120269:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2531; Near: 192.168.1.163:6665) CTCP(768) <-> TCP(22) <-> [IR(23)]
+1524120269:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 30, type: NR
+1524120269:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 30, type: NR
+1524120269:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 31, type: NR
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 31, type: NR
+1524120269:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 32, type: NR
+1524120269:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2531; Near: 192.168.1.163:6665) CTCP(768) <-> TCP(22) <-> [IR(23)]
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 32, type: NR
+1524120269:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(33) with name `1000/deskshare-1524120222815` from protocol IR(23) registered to application `proxypublish`
+1524120269:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120269:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 33, type: ONR4R
+1524120274:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(33) with name `1000/deskshare-1524120222815` from protocol IR(23) unregistered from application `proxypublish`
+1524120274:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 33, type: ONR4R
+1524120274:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2531; Near: 192.168.1.163:6665) CTCP(768) <-> [TCP(22)] <-> IR(23). Error was (10054): Unknown error
+1524120274:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120274:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(23)] unregistered from application: proxypublish
+1524120275:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120275:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2532; Near: 192.168.1.163:6665) CTCP(884) <-> TCP(24) <-> [IR(25)]
+1524120275:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 34, type: NR
+1524120275:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 34, type: NR
+1524120275:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 35, type: NR
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 35, type: NR
+1524120275:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 36, type: NR
+1524120275:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2532; Near: 192.168.1.163:6665) CTCP(884) <-> TCP(24) <-> [IR(25)]
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 36, type: NR
+1524120275:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(37) with name `1000/deskshare-1524120222815` from protocol IR(25) registered to application `proxypublish`
+1524120275:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120275:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 37, type: ONR4R
+1524120290:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(37) with name `1000/deskshare-1524120222815` from protocol IR(25) unregistered from application `proxypublish`
+1524120290:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 37, type: ONR4R
+1524120290:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2532; Near: 192.168.1.163:6665) CTCP(884) <-> [TCP(24)] <-> IR(25). Error was (10054): Unknown error
+1524120290:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120290:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(25)] unregistered from application: proxypublish
+1524120291:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120291:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2533; Near: 192.168.1.163:6665) CTCP(992) <-> TCP(26) <-> [IR(27)]
+1524120291:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 38, type: NR
+1524120291:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 38, type: NR
+1524120291:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 39, type: NR
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 39, type: NR
+1524120291:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 40, type: NR
+1524120291:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2533; Near: 192.168.1.163:6665) CTCP(992) <-> TCP(26) <-> [IR(27)]
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 40, type: NR
+1524120291:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(41) with name `1000/deskshare-1524120222815` from protocol IR(27) registered to application `proxypublish`
+1524120291:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120291:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 41, type: ONR4R
+1524120303:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(41) with name `1000/deskshare-1524120222815` from protocol IR(27) unregistered from application `proxypublish`
+1524120303:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 41, type: ONR4R
+1524120303:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2533; Near: 192.168.1.163:6665) CTCP(992) <-> [TCP(26)] <-> IR(27). Error was (10054): Unknown error
+1524120303:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120303:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(27)] unregistered from application: proxypublish
+1524120304:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120304:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2534; Near: 192.168.1.163:6665) CTCP(876) <-> TCP(28) <-> [IR(29)]
+1524120304:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 42, type: NR
+1524120304:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 42, type: NR
+1524120304:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 43, type: NR
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 43, type: NR
+1524120304:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 44, type: NR
+1524120304:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2534; Near: 192.168.1.163:6665) CTCP(876) <-> TCP(28) <-> [IR(29)]
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 44, type: NR
+1524120304:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(45) with name `1000/deskshare-1524120222815` from protocol IR(29) registered to application `proxypublish`
+1524120304:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120304:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 45, type: ONR4R
+1524120309:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(45) with name `1000/deskshare-1524120222815` from protocol IR(29) unregistered from application `proxypublish`
+1524120309:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 45, type: ONR4R
+1524120309:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2534; Near: 192.168.1.163:6665) CTCP(876) <-> [TCP(28)] <-> IR(29). Error was (10054): Unknown error
+1524120309:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120309:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(29)] unregistered from application: proxypublish
+1524120310:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120310:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2535; Near: 192.168.1.163:6665) CTCP(768) <-> TCP(30) <-> [IR(31)]
+1524120310:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 46, type: NR
+1524120310:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 46, type: NR
+1524120310:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 47, type: NR
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 47, type: NR
+1524120310:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 48, type: NR
+1524120310:3:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1130:BaseRTMPAppProtocolHandler::ProcessInvokePlay:base::Play request for stream name `1000/deskshare-1524120222815`. Start: -1000; length: -1000. Protocol: (Far: 192.168.1.163:2535; Near: 192.168.1.163:6665) CTCP(768) <-> TCP(30) <-> [IR(31)]
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 48, type: NR
+1524120310:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:244:BaseClientApplication::SignalStreamRegistered:Stream ONR4R(49) with name `1000/deskshare-1524120222815` from protocol IR(31) registered to application `proxypublish`
+1524120310:3:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:337:app_proxypublish::ProxyPublishApplication::InitiateForwardingStream:Initiate forward stream, noPublishStream==true
+1524120310:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 49, type: ONR4R
+1524120311:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55287; Near: 192.168.1.163:6665) CTCP(832) <-> [TCP(14)] <-> IR(15). Error was (10054): Unknown error
+1524120311:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120311:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream INR(14) with name `1000/deskshare-1524120222815` from protocol IR(15) unregistered from application `proxypublish`
+1524120311:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 14, type: INR
+1524120311:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(15)] unregistered from application: proxypublish
+1524120311:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 14, type: INR
+1524120315:3:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:249:BaseClientApplication::SignalStreamUnRegistered:Stream ONR4R(49) with name `1000/deskshare-1524120222815` from protocol IR(31) unregistered from application `proxypublish`
+1524120315:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:75:StreamsManager::UnRegisterStream:UnRegisterStream id: 49, type: ONR4R
+1524120315:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.163:2535; Near: 192.168.1.163:6665) CTCP(768) <-> [TCP(30)] <-> IR(31). Error was (10054): Unknown error
+1524120315:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 8->7 IOHT_TCP_CARRIER
+1524120315:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(31)] unregistered from application: proxypublish
+1524120315:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 7->8 IOHT_TCP_CARRIER
+1524120315:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.163:2536; Near: 192.168.1.163:6665) CTCP(964) <-> TCP(32) <-> [IR(33)]
+1524120315:6:..\..\..\sources\applications\proxypublish\src\proxypublishapplication.cpp:237:app_proxypublish::ProxyPublishApplication::SignalStreamRegistered:Stay put. We don't forward this kind of streams: NR
+1524120315:3:..\..\..\sources\thelib\src\streaming\streamsmanager.cpp:58:StreamsManager::RegisterStream:RegisterStream id: 50, type: NR
+1524120315:2:..\..\..\sources\thelib\src\protocols\rtmp\basertmpappprotocolhandler.cpp:1560:BaseRTMPAppProtocolHandler::ProcessInvokeGeneric:Default implementation of ProcessInvokeGeneric: Request: _checkbw
+1524120327:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120327:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55288; Near: 192.168.1.163:6665) CTCP(960) <-> TCP(34) <-> [IR(35)]
+1524120334:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55288; Near: 192.168.1.163:6665) CTCP(960) <-> [TCP(34)] <-> IR(35). Error was (10054): Unknown error
+1524120334:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120334:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(35)] unregistered from application: proxypublish
+1524120339:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120339:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55289; Near: 192.168.1.163:6665) CTCP(904) <-> TCP(36) <-> [IR(37)]
+1524120346:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 9->10 IOHT_TCP_CARRIER
+1524120346:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55290; Near: 192.168.1.163:6665) CTCP(728) <-> TCP(38) <-> [IR(39)]
+1524120347:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55289; Near: 192.168.1.163:6665) CTCP(904) <-> [TCP(36)] <-> IR(37). Error was (10054): Unknown error
+1524120347:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 10->9 IOHT_TCP_CARRIER
+1524120347:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(37)] unregistered from application: proxypublish
+1524120351:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55290; Near: 192.168.1.163:6665) CTCP(728) <-> [TCP(38)] <-> IR(39). Error was (10054): Unknown error
+1524120351:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120351:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(39)] unregistered from application: proxypublish
+1524120353:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 8->9 IOHT_TCP_CARRIER
+1524120353:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55291; Near: 192.168.1.163:6665) CTCP(848) <-> TCP(40) <-> [IR(41)]
+1524120434:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:98:IOHandlerManager::RegisterIOHandler:Handlers count changed: 9->10 IOHT_TCP_CARRIER
+1524120434:3:..\..\..\sources\thelib\src\netio\select\tcpacceptor.cpp:175:TCPAcceptor::Accept:Inbound connection accepted: (Far: 192.168.1.164:55292; Near: 192.168.1.163:6665) CTCP(1012) <-> TCP(42) <-> [IR(43)]
+1524120443:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55292; Near: 192.168.1.163:6665) CTCP(1012) <-> [TCP(42)] <-> IR(43). Error was (10054): Unknown error
+1524120443:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 10->9 IOHT_TCP_CARRIER
+1524120443:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(43)] unregistered from application: proxypublish
+1524120455:0:..\..\..\sources\thelib\src\netio\select\tcpcarrier.cpp:89:TCPCarrier::OnEvent:Unable to read data from connection: (Far: 192.168.1.164:55291; Near: 192.168.1.163:6665) CTCP(848) <-> [TCP(40)] <-> IR(41). Error was (10054): Unknown error
+1524120455:4:..\..\..\sources\thelib\src\netio\select\iohandlermanager.cpp:111:IOHandlerManager::UnRegisterIOHandler:Handlers count changed: 9->8 IOHT_TCP_CARRIER
+1524120455:6:..\..\..\sources\thelib\src\application\baseclientapplication.cpp:239:BaseClientApplication::UnRegisterProtocol:Protocol [IR(41)] unregistered from application: proxypublish

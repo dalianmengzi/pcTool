@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window caption="0,0,0,0" size="430,340" showshadow="true" shadowsize="2">	
+	<HorizontalLayout>
+		<CefBrowser name="webkit" visible="false"/>
+    <HorizontalLayout name="loading" bkimage="img/start.png">      
+    </HorizontalLayout>
+	</HorizontalLayout>							
+</Window>

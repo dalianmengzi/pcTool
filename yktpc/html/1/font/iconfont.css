@@ -1,0 +1,134 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1469675374'); /* IE9*/
+  src: url('iconfont.eot?t=1469675374#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1469675374') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1469675374') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1469675374#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-sousuo:before { content: "\e667"; }
+.icon-yuyin:before { content: "\e665"; }
+.icon-arrow-up:before { content: "\e600"; }
+.icon-photograph:before { content: "\e602"; }
+.icon-accessory:before { content: "\e664"; }
+.icon-feedback:before { content: "\e603"; }
+.icon-check:before { content: "\e605"; }
+.icon-close:before { content: "\e606"; }
+.icon-pc:before { content: "\e607"; }
+.icon-ttpodicon:before { content: "\e615"; }
+.icon-discuss1:before { content: "\e608"; }
+.icon-message-2:before { content: "\e609"; }
+.icon-info:before { content: "\e60a"; }
+.icon-main:before { content: "\e60b"; }
+.icon-cancel:before { content: "\e62e"; }
+.icon-recovery:before { content: "\e62f"; }
+.icon-send:before { content: "\e60c"; }
+.icon-download:before { content: "\e60e"; }
+.icon-shuaxin:before { content: "\e647"; }
+.icon-bi:before { content: "\e631"; }
+.icon-notice:before { content: "\e632"; }
+.icon-play:before { content: "\e633"; }
+.icon-arrow-down:before { content: "\e60f"; }
+.icon-pen:before { content: "\e634"; }
+.icon-loading:before { content: "\e612"; }
+.icon-shang:before { content: "\e660"; }
+.icon-xia:before { content: "\e661"; }
+.icon-qrcode:before { content: "\e613"; }
+.icon-jian:before { content: "\e628"; }
+.icon-question-add:before { content: "\e64c"; }
+.icon-arrow-left:before { content: "\e616"; }
+.icon-empty:before { content: "\e637"; }
+.icon-eraser:before { content: "\e638"; }
+.icon-voice:before { content: "\e619"; }
+.icon-delete:before { content: "\e61b"; }
+.icon-load-over:before { content: "\e639"; }
+.icon-pause:before { content: "\e617"; }
+.icon-lesson:before { content: "\e61c"; }
+.icon-calendar:before { content: "\e61d"; }
+.icon-download-2:before { content: "\e61e"; }
+.icon-arrow-right:before { content: "\e620"; }
+.icon-groupcopy5:before { content: "\e60d"; }
+.icon-vip:before { content: "\e610"; }
+.icon-check1:before { content: "\e63d"; }
+.icon-message-active:before { content: "\e622"; }
+.icon-more:before { content: "\e623"; }
+.icon-more-active:before { content: "\e624"; }
+.icon-user:before { content: "\e625"; }
+.icon-user-active:before { content: "\e626"; }
+.icon-shaixuan:before { content: "\e663"; }
+.icon-article-back:before { content: "\e629"; }
+.icon-music:before { content: "\e640"; }
+.icon-setting:before { content: "\e641"; }
+.icon-setting-active:before { content: "\e642"; }
+.icon-class:before { content: "\e62c"; }
+.icon-remove:before { content: "\e646"; }
+.icon-star:before { content: "\e61f"; }
+.icon-pifu:before { content: "\e61a"; }
+.icon-not-network:before { content: "\e64e"; }
+.icon-subjective:before { content: "\e650"; }
+.icon-judgment:before { content: "\e651"; }
+.icon-choice:before { content: "\e652"; }
+.icon-exam:before { content: "\e62b"; }
+.icon-appraise:before { content: "\e64a"; }
+.icon-sign:before { content: "\e64b"; }
+.icon-question:before { content: "\e653"; }
+.icon-diaochawenjuan:before { content: "\e604"; }
+.icon-brainstorm:before { content: "\e655"; }
+.icon-yaoyiyao:before { content: "\e656"; }
+.icon-discuss:before { content: "\e657"; }
+.icon-nostudent:before { content: "\e635"; }
+.icon-tongbu:before { content: "\e649"; }
+.icon-ceshi:before { content: "\e66d"; }
+.icon-menu:before { content: "\e64d"; }
+.icon-menu-active:before { content: "\e64f"; }
+.icon-find:before { content: "\e658"; }
+.icon-find-active:before { content: "\e659"; }
+.icon-mime:before { content: "\e65a"; }
+.icon-mime-active:before { content: "\e65b"; }
+.icon-message:before { content: "\e65c"; }
+.icon-message-active1:before { content: "\e65d"; }
+.icon-unlink:before { content: "\e65e"; }
+.icon-link:before { content: "\e65f"; }
+.icon-add:before { content: "\e621"; }
+.icon-lianxiren:before { content: "\e672"; }
+.icon-medal:before { content: "\e648"; }
+.icon-assignment:before { content: "\e666"; }
+.icon-sandian:before { content: "\e669"; }
+.icon-icon:before { content: "\e630"; }
+.icon-quick_answer:before { content: "\e668"; }
+.icon-input:before { content: "\e645"; }
+.icon-datiqia:before { content: "\e66a"; }
+.icon-qiandao:before { content: "\e66b"; }
+.icon-taolun:before { content: "\e66c"; }
+.icon-tiwen:before { content: "\e66e"; }
+.icon-tounaofengbao:before { content: "\e66f"; }
+.icon-zuoye:before { content: "\e670"; }
+.icon-ceyan:before { content: "\e671"; }
+.icon-whiteboard:before { content: "\e614"; }
+.icon-paizhao:before { content: "\e618"; }
+.icon-shiwuzhantai:before { content: "\e627"; }
+.icon-shipintonghua:before { content: "\e62a"; }
+.icon-tupian:before { content: "\e63a"; }
+.icon-hand:before { content: "\e63b"; }
+.icon-QQ:before { content: "\e611"; }
+.icon-qqzone:before { content: "\e63f"; }
+.icon-pengyouquan:before { content: "\e643"; }
+.icon-msg:before { content: "\e63e"; }
+.icon-mail:before { content: "\e654"; }
+.icon-weixin:before { content: "\e601"; }
+.icon-member:before { content: "\e62d"; }
+.icon-member-active:before { content: "\e644"; }
+.icon-satrhover:before { content: "\e63c"; }
+.icon-repulse:before { content: "\e662"; }
+.icon-satr:before { content: "\e673"; }
+.icon-homework:before { content: "\e636"; }
+.icon-notices:before { content: "\e674"; }

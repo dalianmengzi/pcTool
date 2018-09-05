@@ -1,0 +1,121 @@
+.xcConfirm .xc_layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    opacity: .5;
+    z-index: 2147000000
+}
+
+.xcConfirm .popBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    z-index: 2147000001;
+    width: 570px;
+    margin-left: -285px;
+    margin-top: -150px;
+    font-weight: 700;
+    color: #535e66
+}
+
+.xcConfirm .popBox .ttBox {
+    height: 60px;
+    line-height: 30px;
+    padding: 14px 30px;
+    border-bottom: solid 1px #eef0f1
+}
+
+.xcConfirm .popBox .ttBox .tt {
+    font-size: 18px;
+    display: block;
+    float: left;
+    height: 30px;
+    position: relative
+}
+
+.xcConfirm .popBox .ttBox .clsBtn {
+    display: none;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    background: url(../../images/icons.png) -48px -96px no-repeat
+}
+
+.xcConfirm .popBox .txtBox {
+    overflow: hidden
+}
+
+.xcConfirm .popBox .txtBox .bigIcon {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    background-image: url(../../images/icons.png);
+    background-repeat: no-repeat;
+    background-position: 48px 0;
+    display: inline-block;
+    vertical-align: top
+}
+
+.xcConfirm .popBox .txtBox p {
+    width: 350px;
+    line-height: 26px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: inline-block;
+    padding: 0;
+    margin: 0
+}
+
+.xcConfirm .popBox .txtBox p input {
+    width: 364px;
+    height: 30px;
+    border: solid 1px #eef0f1;
+    font-size: 18px;
+    margin-top: 6px
+}
+
+.xcConfirm .popBox .btnArea {
+    border-top: solid 1px #eef0f1
+}
+
+.xcConfirm .popBox .btnGroup {
+    float: right
+}
+
+.xcConfirm .popBox .btnGroup .sgBtn {
+    margin-top: 14px;
+    margin-right: 10px;
+    margin-bottom: 14px
+}
+
+.xcConfirm .popBox .sgBtn {
+    display: block;
+    cursor: pointer;
+    float: left;
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff
+}
+
+.xcConfirm .popBox .sgBtn.cancel,.xcConfirm .popBox .sgBtn.ok {
+    color: #fff;
+    background-color: #03ae84
+}
+
+.xcConfirm .popBox,.xcConfirm .popBox .sgBtn {
+    border-radius: 0
+}
+
+.xcConfirm .popBox .txtBox {
+    width: 420px;
+    margin: 40px auto
+}

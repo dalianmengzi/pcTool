@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,214" roundcorner="6,6">
+	<Font shared="true" id="1" name="微软雅黑" size="16" />
+	<Font shared="true" id="2" name="微软雅黑" size="12" />
+    <VerticalLayout enabled="true" width="400" height="214" borderround="5,5">
+		
+        <HorizontalLayout enabled="true" height="48" bkcolor="#FFF7F7F7">
+            <Control float="true" pos="36,14,40,34" enabled="true" bkcolor="#FF4B9EFF" />
+            <Text text="提示" font="1" float="true" width="60" height="16" pos="48,16,108,32" enabled="true" textcolor="#FF333333" />
+        </HorizontalLayout>
+		
+        <Control enabled="true" height="1" bkcolor="#FFDFDFDF" />
+		
+        <VerticalLayout enabled="true" height="165" bkcolor="#FFFFFFFF">
+		
+            <Control enabled="true" height="40" />
+			
+            <HorizontalLayout enabled="true" height="20">
+                <Control enabled="true" width="40" />
+                <Control enabled="true" width="20" height="20" bkimage="file='image\tan_20x20.png'" />
+                <Control enabled="true" width="10" />
+                <Text text="确定退出投屏？" font="2" enabled="true" height="20" textpadding="0,4,0,4" textcolor="#FF333333" align="centerwrap" />				
+				<Control enabled="true" width="10" />
+            </HorizontalLayout>
+			
+            <Control enabled="true" height="47" />
+			
+            <HorizontalLayout enabled="true" height="36">
+                <Control enabled="true" width="78" height="36" />
+				
+                <Button name="yes" enabled="true" normalimage=" file='image\btn_sure_nor.png' " hotimage=" file='image\btn_sure_cover.png' "/>
+				
+                <Control enabled="true" width="24" />
+                
+				 <Button name="no" enabled="true" normalimage=" file='image\btn_cancel_nor2.png' " hotimage=" file='image\btn_cancel_cover2.png' "/>
+				
+                <Control enabled="true" width="78" height="36" />
+            </HorizontalLayout>
+			
+            <Control enabled="true" height="22" />
+			
+        </VerticalLayout>
+		
+    </VerticalLayout>
+</Window>

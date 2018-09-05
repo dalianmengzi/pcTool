@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window size="400,200" mininfo="200,300" caption="0,0,0,32" sizebox="4,4,4,4">
+  <Font name="微软雅黑" size="15" bold="false" />
+  <Font name="微软雅黑" size="15" bold="true" />
+  <Font name="微软雅黑" size="14" bold="false" />
+  <Font name="微软雅黑" size="16" bold="false" />
+  <Font shared="true" id="4" name="微软雅黑" size="14" default="true" />
+  <VerticalLayout bkcolor="#FFF0F0F0"> <!-- 整个窗口的背景 -->
+    <!--标题栏区-->
+    <HorizontalLayout  height="32" bkcolor="#FF00A2E6">
+      <Control name="wifi_logo" float="true" pos="10,7" width="16" height="16" bkimage="file='image\logo.png' "/>
+      <Label name="title" text="自动更新" pos="40,7" float="true" width="100" height="17" textcolor="#FFFFFF" font="0"/>
+    </HorizontalLayout>
+    
+    <!--客户区-->
+    <VerticalLayout pos="70,60" width="360" height="300" float="true">
+      <Label name="info" text="检测到软件有更新，是否现在更新？" pos="0,10" float="true" width="300" height="17" textcolor="#000000" font="0"/>
+      <!--按钮-->
+      <HorizontalLayout pos="40,80" width="200" height="30" float="true">
+        <Button name="btn_ok" pos="0, 0" width="80" height="30" text="确定" float="true" normalimage="file='image\btn_ok_nor.png' corner='4,2,4,2'"  hotimage=" file='image\btn_ok_pre.png' " font="2" textcolor="#FFFFFF"></Button>
+        <Button name="btn_cancel" pos="120, 0" width="80" height="30" text="取消" float="true" normalimage="file='image\btn_cancel_nor.png' corner='4,2,4,2'"  hotimage=" file='image\btn_cancel_pre.png' " font="2" textcolor="#050505"></Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

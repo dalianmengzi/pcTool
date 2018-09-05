@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="650,394">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font name="微软雅黑" size="21" bold="false" italic="false" />
+    <VerticalLayout name="VerticalLayoutUI1" width="60" height="30" bkcolor="#FFF0F0F0">
+        <HorizontalLayout name="HorizontalLayoutUI1" height="32" bkcolor="#FF0070AA">
+            <Control name="about_logo" float="true" pos="16,7,0,0" width="20" height="20" bkimage="image\dialog_ic_logo.png" />
+            <Label name="title" text="关于我们" float="true" pos="50,6,0,0" width="60" height="24" textcolor="#00FFFFFF" disabledtextcolor="#FFA7A6AA" font="0" />
+            <Button name="btn_close" float="true" pos="619,0,0,0" width="33" height="33" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage=" file=&apos;image\dialog_ic_close_nor.png&apos; " hotimage=" file=&apos;image\dialog_ic_close_nor.png&apos; " />
+        </HorizontalLayout>
+        <HorizontalLayout name="HorizontalLayoutUI2" width="646" height="321">
+            <Control name="ControlUI1" float="true" pos="71,89,0,0" width="162" height="130" bkimage="image\about_logo.png" />
+            <Label name="version_info" text="畅言空中课堂1.0.1.1030版本" float="true" pos="303,89,0,0" width="331" height="39" textcolor="#002685E7" disabledtextcolor="#FFA7A6AA" font="3" />
+            <Label name="detail" text="助力教师打造智能、高效课堂" float="true" pos="303,125,0,0" width="329" height="39" textcolor="#006A6A6A" disabledtextcolor="#FFA7A6AA" font="1" />
+            <Button name="btn_update" text="检查更新" float="true" pos="304,179,0,0" width="128" height="38" textcolor="#00FFFBF0" disabledtextcolor="#FFA7A6AA" font="2" align="center" normalimage="file=&apos;image\btn_ok_nor.png&apos; corner=&apos;4,2,4,2&apos;" hotimage="image\btn_ok_pre.png" />
+            <Label name="waring_info" float="true" pos="451,184,0,0" width="173" height="30" textcolor="#00FF0000" disabledtextcolor="#FFA7A6AA" font="2" />
+        </HorizontalLayout>
+        <Label name="company" text="版权所有：科大讯飞股份有限公司" float="true" pos="83,359,0,0" width="231" height="30" textcolor="#00999999" disabledtextcolor="#FFA7A6AA" font="0" />
+        <Label name="LabelUI1" text="客服电话：400-035-2610" float="true" pos="431,361,0,0" width="146" height="30" textcolor="#00999999" disabledtextcolor="#FFA7A6AA" font="0" />
+    </VerticalLayout>
+</Window>

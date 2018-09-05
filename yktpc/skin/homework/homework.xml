@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1280,720" mininfo="1024,768" sizebox="4,4,4,4" caption="0,0,0,20" showshadow="true" shadowsize="2" shadowposition="3,3" shadowcolor="#000000">
+  <Font name="微软雅黑" id="0" size="14" bold="false" italic="false" />
+  <Font name="微软雅黑" id="1" size="18" bold="false" italic="false" />
+  <Font name="微软雅黑" id="2" size="26" bold="true" italic="false" />
+  <VerticalLayout bkcolor="#FFFFFFFF">
+  	<VideoView name="videoview" bkcolor="#0000A200" visible="false" />
+    <!--标题栏-->
+    <HorizontalLayout name="title_bar" height="50" bkcolor="#FFFFFFFF" visible="true">
+      <Control width="20" />
+      <Label width="35" height="34" padding="0,8,0,0" bkimage="logo-img.png"/>
+      <Control width="5" />
+      <Label width="125" height="20" padding="0,15,0,0" bkimage="logo-text.png"/>
+      <Control />
+      <HorizontalLayout width="104">
+        <!--菜单和按钮-->
+        <Button name="menubtn" height="26" width="26" normalimage="btns/open.png" />
+        <Button name="setbtn" height="26" width="26" normalimage="btns/set.png" />
+        <Button name="minbtn" height="26" width="26" normalimage="btns/min.png" />
+        <Button name="closebtn" height="26" width="26" normalimage="btns/close.png" />
+      </HorizontalLayout>
+    </HorizontalLayout>
+      <!--cef-->
+      <CefBrowser name="cef" visible="true"/>
+  </VerticalLayout>
+</Window>

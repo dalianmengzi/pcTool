@@ -1,0 +1,443 @@
+﻿生成启动时间为 2018/5/31 15:57:18。
+     1>项目“F:\PCTP\66TPFull\投屏通\build\player.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../3rd /I../build /I../mirco_utils/common /I../mirco_utils/net /I../mirco_utils /I../3rd/ffmepg /I"../3rd/openssl-0.9.8/include" /I../player /I../3rd/librtmp/ /I../3rd/DuiLib /Zi /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _CRT_NON_CONFORMING_SWPRINTFS /D _CRT_NONSTDC_NO_DEPRECATE /D RELEASE /D CEF_BROWSER /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\player_r\\" /Fd"Release\player_r\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\player\broadcast\broadcast.cpp ..\player\data\global_variables.cpp ..\player\data\model.cpp ..\player\json\jsoncpp.cpp ..\player\MainWnd.cpp ..\player\md51.cpp ..\player\media\rtmp_stream.cpp ..\player\media\rtmp_video.cpp ..\player\net\director.cpp ..\player\net\IpWatcher.cpp ..\player\net\web_handler.cpp ..\player\net\web_utils.cpp ..\player\player.cpp ..\player\stdafx.cpp ..\player\ui\about_dlg.cpp ..\player\ui\AuthorDlg.cpp ..\player\ui\control_view\video_view.cpp ..\player\ui\floatview.cpp ..\player\ui\IWndPage.cpp ..\player\ui\MainPage.cpp ..\player\ui\main_frame.cpp ..\player\ui\rich_edit\CvvImage.cpp ..\player\ui\routerset_dlg.cpp ..\player\ui\tips_dlg.cpp ..\player\ui\tips_neterror.cpp ..\player\UploadUtil.cpp ..\player\utils1\FileUtil.cpp ..\player\utils1\HttpClient.cpp ..\player\utils1\md5.cpp ..\player\utils1\os_utils.cpp ..\player\utils1\Uri.cpp ..\player\utils1\wmiInfo.cpp ..\player\utils\consolehelper.cpp ..\player\utils\Firewall.cpp ..\player\utils\Path.cpp ..\player\zip\unzip.cpp
+         broadcast.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>f:\pctp\66tpfull\投屏通\player\broadcast\net_utils.h(12): warning C4068: 未知的杂注
+     1>f:\pctp\66tpfull\投屏通\player\broadcast\net_utils.h(142): warning C4018: “<”: 有符号/无符号不匹配
+     1>f:\pctp\66tpfull\投屏通\player\broadcast\net_utils.h(219): warning C4244: “参数”: 从“DWORD”转换到“u_short”，可能丢失数据
+     1>f:\pctp\66tpfull\投屏通\player\broadcast\net_utils.h(225): warning C4244: “参数”: 从“DWORD”转换到“u_short”，可能丢失数据
+     1>..\player\broadcast\broadcast.cpp(152): warning C4018: “<”: 有符号/无符号不匹配
+         global_variables.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         model.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         jsoncpp.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         MainWnd.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         md51.cpp
+     1>..\player\md51.cpp(135): warning C4244: “参数”: 从“std::streamsize”转换到“size_t”，可能丢失数据
+         rtmp_stream.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>F:\PCTP\66TPFull\投屏通\3rd\librtmp\rtmp_sys.h(35): warning C4005: “strcasecmp”: 宏重定义
+                 f:\pctp\66tpfull\投屏通\mirco_utils\common\utils.h(29) : 参见“strcasecmp”的前一个定义
+     1>F:\PCTP\66TPFull\投屏通\3rd\librtmp\rtmp_sys.h(43): warning C4005: “EWOULDBLOCK”: 宏重定义
+                 E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\errno.h(132) : 参见“EWOULDBLOCK”的前一个定义
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(12): warning C4068: 未知的杂注
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(142): warning C4018: “<”: 有符号/无符号不匹配
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(219): warning C4244: “参数”: 从“DWORD”转换到“u_short”，可能丢失数据
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(225): warning C4244: “参数”: 从“DWORD”转换到“u_short”，可能丢失数据
+     1>..\player\media\rtmp_stream.cpp(288): warning C4309: “=”: 截断常量值
+     1>..\player\media\rtmp_stream.cpp(291): warning C4309: “=”: 截断常量值
+     1>..\player\media\rtmp_stream.cpp(308): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\player\media\rtmp_stream.cpp(341): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\player\media\rtmp_stream.cpp(638): warning C4800: “RTMPStream *”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>..\player\media\rtmp_stream.cpp(714): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+     1>..\player\media\rtmp_stream.cpp(1032): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\player\media\rtmp_stream.cpp(1039): warning C4018: “<”: 有符号/无符号不匹配
+         rtmp_video.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         director.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         IpWatcher.cpp
+     1>F:\PCTP\66TPFull\投屏通\player\stdafx.h(7): warning C4005: “WINVER”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\shared\sdkddkver.h(211) : 参见“WINVER”的前一个定义
+     1>F:\PCTP\66TPFull\投屏通\player\stdafx.h(8): warning C4005: “_WIN32_WINNT”: 宏重定义
+                 C:\Program Files (x86)\Windows Kits\8.0\Include\shared\sdkddkver.h(196) : 参见“_WIN32_WINNT”的前一个定义
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         web_handler.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(12): warning C4068: 未知的杂注
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(142): warning C4018: “<”: 有符号/无符号不匹配
+         web_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         player.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>f:\pctp\66tpfull\投屏通\player\../3rd/DuiLib/Utils/GlobalDefine.h(44): warning C4005: “SAFE_RELEASE”: 宏重定义
+                 f:\pctp\66tpfull\投屏通\mirco_utils\common\utils.h(268) : 参见“SAFE_RELEASE”的前一个定义
+     1>f:\pctp\66tpfull\投屏通\player\broadcast/net_utils.h(12): warning C4068: 未知的杂注
+     1>f:\pctp\66tpfull\投屏通\player\broadcast/net_utils.h(142): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\player\player.cpp(469): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\player\player.cpp(600): warning C4101: “p”: 未引用的局部变量
+     1>..\player\player.cpp(587): warning C4101: “nResponse”: 未引用的局部变量
+         stdafx.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         about_dlg.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         AuthorDlg.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         video_view.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\ui\control_view\video_view.cpp(153): warning C4244: “初始化”: 从“__int64”转换到“long”，可能丢失数据
+         floatview.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\ui\floatview.cpp(104): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+     1>..\player\ui\floatview.cpp(119): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+         IWndPage.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\ui\IWndPage.cpp(70): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+         MainPage.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         正在生成代码...
+         正在编译...
+         main_frame.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(12): warning C4068: 未知的杂注
+     1>F:\PCTP\66TPFull\投屏通\player\broadcast/net_utils.h(142): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\player\ui\main_frame.cpp(961): warning C4018: “<”: 有符号/无符号不匹配
+         CvvImage.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\ui\rich_edit\CvvImage.cpp(104): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\player\ui\rich_edit\CvvImage.cpp(154): warning C4554: “&”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+         routerset_dlg.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         tips_dlg.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         tips_neterror.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\ui\tips_neterror.cpp(11): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+         UploadUtil.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         FileUtil.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         HttpClient.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>..\player\utils1\HttpClient.cpp(120): warning C4244: “=”: 从“std::streamsize”转换到“int”，可能丢失数据
+         md5.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         os_utils.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         Uri.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         wmiInfo.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         consolehelper.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+     1>f:\pctp\66tpfull\投屏通\player\utils\consolehelper.h(15): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+         Firewall.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         Path.cpp
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UICefBrowser.h(70): warning C4251: “DuiLib::CCefBrowserUI::m_clsName”: class“std::basic_string<_Elem,_Traits,_Alloc>”需要有 dll 接口由 class“DuiLib::CCefBrowserUI”的客户端使用
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>,
+                     _Alloc=std::allocator<wchar_t>
+                 ]
+     1>f:\pctp\66tpfull\投屏通\3rd\duilib\Control/UIMenu.h(310): warning C4251: “DuiLib::CMenuWnd::m_xml”: class“DuiLib::STRINGorID”需要有 dll 接口由 class“DuiLib::CMenuWnd”的客户端使用
+                 f:\pctp\66tpfull\投屏通\3rd\duilib\Utils/Utils.h(12) : 参见“DuiLib::STRINGorID”的声明
+         unzip.cpp
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\player_r\player.res" ..\player\player.rc 
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\PCTP\66TPFull\投屏通\build\Release\云课堂.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='requireAdministrator' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\PCTP\66TPFull\投屏通\build\Release\云课堂.pdb" /SUBSYSTEM:WINDOWS,"5.01" /OPT:NOREF /OPT:NOICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\PCTP\66TPFull\投屏通\build\Release\云课堂.lib" /MACHINE:X86 /SAFESEH /SAFESEH:NO Release\player_r\player.res
+         Release\player_r\broadcast.obj
+         Release\player_r\global_variables.obj
+         Release\player_r\model.obj
+         Release\player_r\jsoncpp.obj
+         Release\player_r\MainWnd.obj
+         Release\player_r\md51.obj
+         Release\player_r\rtmp_stream.obj
+         Release\player_r\rtmp_video.obj
+         Release\player_r\director.obj
+         Release\player_r\IpWatcher.obj
+         Release\player_r\web_handler.obj
+         Release\player_r\web_utils.obj
+         Release\player_r\player.obj
+         Release\player_r\stdafx.obj
+         Release\player_r\about_dlg.obj
+         Release\player_r\AuthorDlg.obj
+         Release\player_r\video_view.obj
+         Release\player_r\floatview.obj
+         Release\player_r\IWndPage.obj
+         Release\player_r\MainPage.obj
+         Release\player_r\main_frame.obj
+         Release\player_r\CvvImage.obj
+         Release\player_r\routerset_dlg.obj
+         Release\player_r\tips_dlg.obj
+         Release\player_r\tips_neterror.obj
+         Release\player_r\UploadUtil.obj
+         Release\player_r\FileUtil.obj
+         Release\player_r\HttpClient.obj
+         Release\player_r\md5.obj
+         Release\player_r\os_utils.obj
+         Release\player_r\Uri.obj
+         Release\player_r\wmiInfo.obj
+         Release\player_r\consolehelper.obj
+         Release\player_r\Firewall.obj
+         Release\player_r\Path.obj
+         Release\player_r\unzip.obj
+         player.vcxproj -> F:\PCTP\66TPFull\投屏通\build\Release\云课堂.exe
+     1>已完成生成项目“F:\PCTP\66TPFull\投屏通\build\player.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:12.83

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1280,720" mininfo="1024,768" sizebox="4,4,4,4" caption="0,0,0,20">
+  <Font name="微软雅黑" id="0" size="14" bold="false" italic="false" />
+  <Font name="微软雅黑" id="1" size="18" bold="false" italic="false" />
+  <Font name="微软雅黑" id="2" size="26" bold="true" italic="false" />
+  <VerticalLayout bkcolor="#FF03ae84">
+  	<VideoView name="videoview" bkcolor="#0000A200"  visible="false" />
+    <!--标题栏-->
+    <HorizontalLayout name="title_bar" height="30" bkcolor="#FF03ae84" visible="true">
+      <Control width="20" />
+      <!--66云课堂log-->
+      <!--<Label  height="50" padding="0,8,0,0" bkimage="image/ykt-logo.png"/>-->
+      <!--职教云log-->
+       <!--<Label  height="50" width="150"  padding="0,8,0,0" bkimage="image/zjy-logo.png"/>-->
+      <Control width="5" />
+     
+      <Control />
+	 
+      <HorizontalLayout width="80">
+        <!--菜单和按钮-->
+        <!-- <Button height="26" width="26"></Button>-->
+        <Button height="26" width="26"></Button>
+        <!--<Button name="menubtn" height="26" width="26" normalimage="image/btns/open.png" />
+        <Button name="setbtn" height="26" width="26" normalimage="image/btns/set.png" />-->
+        <Button name="minbtn" height="25" width="25" normalimage="image/btns/min.png" />
+        <Button name="closebtn" height="25" width="25" normalimage="image/btns/close.png" />
+      </HorizontalLayout>
+    </HorizontalLayout>
+      <!--cef-->
+      <CefBrowser name="cef" visible="true"/>
+  </VerticalLayout>
+</Window>

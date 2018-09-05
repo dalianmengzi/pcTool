@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>云课堂-授课页面</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+
+    <link rel="stylesheet" href="../framework/MDialog/MDialog.css" />
+	<link rel="stylesheet" href="../framework/alert/alert.css" />
+    <link rel="stylesheet" href="../font/iconfont.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/qtp.css">
+    <script type="text/javascript" src="../framework/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="../framework/alert/alert.js"></script>
+    <script type="text/javascript" src="../framework/artTemplate/template.js"></script>
+    <script type="text/javascript" src="../framework/MDialog/MDialog.min.js"></script>
+    <script type="text/javascript" src="../framework/socket/socket.io.js"></script>
+    <script type="text/javascript" src="../framework/qrcode/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="../framework/echart/echarts.js"></script>
+
+    <!-- {{base.js}} -->
+    <!-- build:remove -->
+    <script type="text/javascript" src="../framework/config.js"></script>
+    <script type="text/javascript" src="../framework/draw/BoardCanvas.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/board.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/shake.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/discuss.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/exam.js"></script>
+     <script type="text/javascript" src="../framework/teachActivity/vote.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/sign.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/brain-storm.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/quiz.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/remoteVideo.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/connectVideo.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/activitying.js"></script>
+    <script type="text/javascript" src="../framework/teachActivity/pk.js"></script>
+	<script type="text/javascript" src="../framework/teachActivity/brain-storm-end.js"></script>
+    
+    <script type="text/javascript" src="../framework/preview/video.js"></script>
+    <script type="text/javascript" src="../framework/preview/audio.js"></script>
+    <script type="text/javascript" src="../framework/preview/office.js"></script>
+    <script type="text/javascript" src="../framework/preview/officeHtml.js"></script>
+    <script type="text/javascript" src="../framework/preview/download.js"></script>
+    <script type="text/javascript" src="../framework/preview/windowPPT.js"></script>
+    <script type="text/javascript" src="../framework/preview/preview.js"></script>
+
+    <script type="text/javascript" src="../framework/utils/utils.js"></script>
+    <script type="text/javascript" src="../framework/utils/adapter.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- endbuild -->
+
+</head>
+
+<body scroll="no" class="allwhite">
+    <div class="zjy-wrapper">
+     <!--    <div style="text-align:center;font-size:28px; " class="clearfix" id="select_touping">
+            <input type="radio" style="width:50px;height:50px;vertical-align:text-bottom; margin-top:5px;" name="touping" checked="checked" class="touping" value="0" />按需投屏
+            <input type="radio" style="width:50px;height:50px;vertical-align:text-bottom; margin-top:5px;" name="touping" class="touping" value="1"/>全投屏(安卓)
+            <input type="radio" style="width:50px;height:50px;vertical-align:text-bottom; margin-top:5px;" name="touping" class="touping" value="2"/>全投屏(苹果)
+         </div>-->
+     <!--   <div style="text-align:center;font-size:28px; " class="clearfix" id="select_touping">
+            投屏
+         </div>-->
+        <div class="full-screen clearfix">
+           
+        <!--    <a class="plus" href="javascript:;">×</a>
+            <a class="minus" href="javascript:;">-</a>-->
+            <!--<i class="iconfont switch-theme">&#xe61a;</i>-->
+        </div>
+        <div id="main-box" class="text-center main-box">
+
+        </div>
+    </div>
+</body>
+
+
+<script type="text/html" id="code-login">
+    <div class="jdtp">
+       
+        <div class="clearfix" style="margin: 0 auto; width: 885px; padding-top: 8%; ">
+            {{if ips.length>0}}
+            <div class="ip-wrap">
+                <label>IP:</label>
+                <span {{if ips.length>1 }}class="has-ips current-ip select-ips"{{else}}class="current-ip " {{/if}}>{{selectedIp}}</span>
+                <div class="ips-list">
+                    {{each ips as value index}}
+                    <p {{if value == selectedIp}}class="active"{{/if}}>{{value}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
+            <div class="app-code">
+                <div id="qrcode-img"></div>
+              <!--  <div class="app-news">请使用“云课堂教师版”APP扫一扫以登录</div>-->
+            </div>
+
+            <div class="app-phone">
+                <p>1、扫描左边的二维码，进行连接；</p>
+                <p>2、显示【登录成功】后，返回首页</p>
+                <p>3、进入课程，选择班级，</p>
+                <p>&emsp;&emsp;打开课件，投屏展示...</p>
+                <p>&emsp;&emsp;进入课堂，开始互动...</p>
+                <!--<img src="../img/app-phone.png" />-->
+            </div>
+        </div>
+    </div>
+   <!-- <div class="aztp" style="display:none;">
+         <div class="np-wrapper"  >
+            <div class="np-container">
+                 <div class="np-qrcode-content">
+                    <p>打开手机扫一扫连接电脑</p>
+                    <div class="np-qrcode-image">
+                        <img src="../images/qrcode.png" alt="二维码图片"></div>
+                </div>
+                <div style="text-align: center;color: red;">投屏之前确保两台设备处于同一局域网内，即连接同一WiFi，<br/>课前请在实际教室环境测试。</div>
+
+                    <div class="np-ip-list np-select" style="float:right;margin-top:-350px;" >
+
+                    <p>请选择与投屏地址同网段的IP</p>
+                    <ul class="ips-list">
+
+                        <li class="np-ip-li">
+                            <label class="np-ip-item">
+                                <span class="np-ip-no">IP1</span>
+                                <input type="radio" name="IP" ><span class="np-ip-address">172.16.0.240</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+     
+     </div>-->
+      
+  
+  
+   <!-- <div class="pgtp" style="display:none;">
+        <div style="text-align:right;font-size:30px;margin-right:20px;" ><span id="selectIp" style="height: 36px;line-height: 36px;background: #04ae84;">ip:172.16.0.240</span></div>
+        <div style="text-align:center;font-size:30px;margin-right:20px;" ><span  style="height: 36px;line-height: 36px;">如果无法发现镜像，请先尝试运行 苹果镜像.bat</span></div>
+        <div style="text-align:center;">
+            <img src="../images/苹果投屏.png"  style="height:35%;width:50%;"/>
+        </div>
+
+    </div>-->
+
+</script>
+<!--确认登录界面-->
+<script type="text/html" id="confirm-login">
+         
+    <div class="clearfix" style="margin: 0 auto; width: 885px; padding-top: 8%; ">
+        <div class="main-wrap">
+            <div class="loginer-wrap">
+                <div class="loginer">
+                    <img class="headUrl" src="../img/headDefault.png" />
+                </div>
+                <h2 class="displayName"></h2>
+            </div>
+            <div class="conf-login">
+                <p>请在手机上确认登录</p>
+                <a href="javascript:;" class="back">返回扫二维码登录</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--选择登录用户页面-->
+<script type="text/html" id="selectUser">
+    <div class="clearfix" style="margin: 0 auto; width: 800px; padding-top: 10%; ">
+        {{if ips.length>0}}
+        <div class="ip-wrap">
+            <label>IP:</label>
+            <span {{if ips.length>1 }}class="has-ips current-ip select-ips"{{else}}class="current-ip " {{/if}}>{{selectedIp}}</span>
+            <div class="ips-list">
+                {{each ips as value index}}
+                <p>{{value.ip}}</p>
+                {{/each}}
+            </div>
+
+        </div>
+        {{/if}}
+        <div class="main-wrap">
+            <div class="loginer-list">
+                <ul>
+                </ul>
+            </div>
+            <div class="conf-login" style="margin-top:130px;">
+                <a href="javascript:;" class="logining">登录</a>
+                <a href="javascript:;" class="back" style="margin-top:20px;">扫描二维码登录</a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--连接成功界面-->
+<script type="text/html" id="connected">
+  
+    <div class="main-wrap">
+        <div class="content-ok"></div>
+        <div class="clearfix" style=" padding-top: 5%; ">
+            <div class="contenting"><img src="../img/connecting.png" alt="" /></div>
+            <p class="connecting-info">点击班级/课堂，开始投屏上课！</p>
+        </div>
+    </div>
+</script>
+
+<!--签到页面-->
+<script type="text/html" id="activitying-tmpl">
+    <div class="teach-activity">
+        <h3 class="activity-title">{{title}}</h3>
+        <div class="main-wrap">
+            <div class="activitying-chart-box">
+                <div class="activitying-chart"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="activity-signing-gesture">
+    <div class="teach-activity">
+        <h3 class="activity-title">签到中</h3>
+        <div class="main-wrap">
+
+            <div class="activity-patt">
+                <div class="patt-holder">
+                    <ul class="patt-wrap clearfix">
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                        <li class="patt-circ">
+                            <div class="patt-dots"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="activity-patt">
+                <div class="activitying-chart-gesture"></div>
+            </div>
+
+        </div>
+    </div>
+</script>
+<!--签到结果页-->
+<script type="text/html" id="signed-result">
+    <div class="clearfix" id="signed-result-analysis" >
+        <div class="test-result-wrap" >
+            <h3>缺勤学生</h3>
+            <ul id="no-sign-student" class="shaking">
+                {{each notSignUser as value index}}
+                <li class="shaking-user">
+                    <img width="140" height="140" src="{{value.avator?value.avator+'/200_200.jpg':'../img/student-header.png'}}" alt="" onerror="this.src='../img/student-header.png'" />
+                    <p>{{value.name}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</script>
+<!--签到分析-->
+
+<script type="text/html" id="signed-analysis">
+     <div class="clearfix" style="width:100%; margin: 0 auto;">
+        <div class="test-result-wrap">
+            <h3>签到统计</h3>
+            <div class="test-result-detail clearfix">
+                <div class="vote-title">
+                    <h4>{{signTitle}}</h4>
+                   <!-- <p>{{VoteContent}}</p>-->
+                </div>
+               
+            </div>
+            <div style="text-align:center;">
+                <div class="analysis-image " id="sign_pie" style="height: 500px; display:inline-block; width: 500px;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clearfix" style="width:100%; margin: 0 auto; padding-top: 20px;">
+        <div class="test-result-wrap">
+            <h3>签到统计数据</h3>
+            <div class="test-result-detail clearfix">
+                <div class="average-score">
+                    <h4>平均出勤率</h4>
+                    <p>{{percent||0}}</p>
+                </div>
+                <div class="average-time">
+                    <h4>考勤次数</h4>
+                    <P>{{totalNum}}</P>
+                </div>
+            </div>
+            <div class="analysis-image" style="width:90%; height: 500px;"></div>
+            <div class="students-list">
+
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--签到学生列表-->
+<script type="text/html" id="signed-students-list">
+    <div class="clearfix" style="width:885px; margin: 0 auto;">
+        <div class="student-list-head clearfix">
+            <span style="width: 350px; text-align: left; text-indent: 30px;">成员详情</span>
+            <span>缺勤</span>
+            <span>事假</span>
+            <span>迟到</span>
+            <span>出勤率</span>
+        </div>
+        <ul class="student-list">
+            {{each list as value index}}
+            <li class="clearfix">
+                <div class="clearfix" style=" float:left; width: 350px; text-align: left; text-indent: 30px;">
+                    <span class="stu-pic" style="background: url({{value.avator}}||../img/loginer-img.png) no-repeat center center;}}"></span>
+                    <span class="stu-name"><h3>value.name</h3><p>value.studentnum</p></span>
+                </div>
+                <span>{{value.abs}}</span>
+                <span>{{value.comp}}</span>
+                <span>{{value.late}}</span>
+                <span>{{value.attendance}}</span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>
+
+<!--随堂测试-->
+<script type="text/html" id="activity-examing">
+    <div class="teach-activity">
+        <h3 class="activity-title">答题中</h3>
+        <div class="main-wrap" style="width:960px;height:550px; margin: 0 auto; position:relative;font-size: 25px;">
+
+        </div>
+        <div class="activity-number">
+            <em id="activity-ended">{{studentNumber}}</em>/<em id="activity-count">{{studycount}}</em>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="activity-exam-result">
+    <div class="clearfix" style="width:885px; margin: 0 auto;">
+        <div class="test-result-wrap">
+            <h3>答题成员</h3>
+            <ul class="tester-list">
+                {{each list}}
+                <li class="clearfix">
+                    <div class="tester-pic" style="background:url(../img/loginer-img.png) no-repeat center center;"></div>
+                    <div class="tester">
+                        <h4>{{value.displayname}}</h4>
+                        <em>{{value.usetime}}</em>
+                    </div>
+                    <div class="test-pro">{{value.score}}</div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</script>
+<!--测试结果分析页-->
+<script type="text/html" id="activity-exam-analysis">
+    <div id="exam-analysis" class="clearfix" style="width:100%; margin: 0 auto;">
+        <div class="test-result-wrap">
+            <h3>测试结果分析</h3>
+            <div class="test-result-detail clearfix">
+                <div class="average-score">
+                    <h4>平均分</h4>
+                    <p>{{averageScore}}</p>
+                </div>
+                <div class="average-time">
+                    <h4>平均时长</h4>
+                    <P>{{#min}}{{#sec}}</P>
+                </div>
+            </div>
+            <div class="analysis-image" style="width: 90%;height: 480px;"></div>
+        </div>
+    </div>
+    <div id="question-one-analysis"></div>
+</script>
+
+<!--单题分析-->
+<script type="text/html" id="activity-exam-analysis-question">
+    <div id="exam-analysis-question" class="clearfix">
+        <div class="test-cont">
+            <div class="cont-info">{{#title}}</div>
+        </div>
+        <div class="test-option">
+            {{each selects as value i }}
+            <div class="option-single">
+                <div class="single-info"><span class="option {{if value.IsAnswer}}active{{/if}}">{{A_Z[i]}}</span>{{#value.Content}}</div>
+                <p>
+                    <span style="width: {{value.percent}}%; background: {{color[i]}};"></span>
+                    <em style="background: {{color[i]}};left: {{value.left}}%;">{{value.percent}}%</em>
+                    <i style="border-right: 8px solid {{color[i]}};right: {{value.right}}%;"></i>
+                </p>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</script>
+
+<!-- 投票结果分析页 -->
+<script type="text/html" id="activity-vote-analysis">
+    <div id="vote-analysis" class="clearfix" style="width:100%; margin: 0 auto;">
+        <div class="test-result-wrap">
+            <h3>投票结果分析</h3>
+            <div class="vote-result-detail clearfix">
+                <div class="vote-title">
+                    <h4>{{Title}}</h4>
+                  <p>{{VoteContent}}</p>
+                </div>
+               
+            </div>
+
+           
+            
+                <div class="analysis-image vote_pic" style="height: 500px; margin-top:180px; display:inline-block;width:600px; vertical-align:top;">
+                
+                </div>
+                <div class="analysis-image vote_pie" style="height: 500px; display:inline-block; width: 500px;"></div>
+            </div>
+       
+    </div>
+   
+</script>
+
+
+<!--学生下载学生端页面-->
+<script type="text/html" id="joinClass-page">
+    <div class="clearfix" style="width:975px; margin: 0 auto; padding-top: 5%;">
+
+        <ul class="scan-list">
+            <li>1.&nbsp;&nbsp;扫描二维码下载云课堂APP</li>
+            <li>
+                <div class="bg-code">
+                </div>
+            </li>
+            <li>2.&nbsp;&nbsp;注册账号进入云课堂</li>
+            <li>3.&nbsp;&nbsp;点击应用界面的&nbsp;<i class="li-add">+</i>，输入课堂邀请码&nbsp;<i>{{accessCode}}</i>，点击&nbsp;<i>加入</i></li>
+        </ul>
+    </div>
+</script>
+
+<!--摇一摇界面-->
+<script type="text/html" id="activity-shake">
+    <div class="shake_and_shake">
+        <h3 class="activity-title">{{name}}</h3>
+        <ul class="shaking">
+        </ul>
+    </div>
+</script>
+<!--摇一摇学生列表-->
+<script type="text/html" id="activity-shake-students">
+    {{each userInfo as value i }}
+    <li class="shaking-user score_box_{{value.userId}}">
+        <img width="140" height="140" src="{{value.userAvator||'../img/student-header.png'}}" alt="" onerror="this.src='../img/student-header.png'" />
+        <p>{{value.userName}}</p>
+        <span class="score_{{value.userId}} {{value.score?'has_score':''}}">{{value.score||""}}</span>
+    </li>
+    {{/each}}
+</script>
+
+<!--摇一摇一个学生-->
+<script type="text/html" id="activity-shake-student">
+    <li class="shaking-user score_box_{{userId}}">
+        <img width="140" height="140" src="{{userAvator||'../img/student-header.png'}}" alt="" onerror="this.src='../img/student-header.png'" />
+        <p>{{userName}}</p>
+        <span class="score_{{userId}} {{score?'has_score':''}}">{{score||""}}</span>
+    </li>
+</script>
+
+<!--学生讨论页面-->
+<script type="text/html" id="activity-discuss">
+    <div class="discuss-box">
+        <div class="discuss-wrap">
+
+            {{each list as value i}}
+            <div class="discuss-list clearfix">
+                <div class="stu-pic">
+                    <img width="150" height="150" src="{{value.avatarUrl||'../img/student-header.png'}}" alt="">
+                    <span class="score_{{value.Id}} has_score">{{value.performanceScore}}</span>
+                </div>
+                <div class="discuss-info">
+                    <h4>{{value.creatorName}}</h4>
+                    <p class="discuss_list_content">
+                        {{value.content}}
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="discuss-content">
+            <h3 class="discuss-title">{{#data.title}}</h3>
+            <div class="discuss-cont">
+                <div class="discuss-cont-box">{{#data.content}}</div>
+            </div>
+        </div>
+        <div class="discuss-detail-box" style="display: none;">
+
+        </div>
+    </div>
+</script>
+
+<!--一个讨论回复-->
+<script type="text/html" id="activity-discuss-reply">
+    <div class="discuss-list clearfix">
+        <div class="stu-pic">
+            <img width="150" height="150" src="{{value.avator||'../img/student-header.png'}}" alt="">
+            <span class="score_{{value.id}} {{value.performanceScore?'has_score':''}}">{{value.performanceScore>0?value.performanceScore:""}}</span>
+        </div>
+        <div class="discuss-info">
+            <h4>{{value.name}}</h4>
+            <p class="discuss_list_content">{{value.content}}</p>
+        </div>
+    </div>
+</script>
+
+<!--讨论详请-->
+<script type="text/html" id="activity-discuss-detail">
+    <div class="reply_dialog">
+        <div class="discuss-detail clearfix">
+            <div class="stu-pic">
+                <img width="150" height="150" src="{{value.avatar||'../img/student-header.png'}}" alt="">
+                <!-- <span class="score has_score">{{appreciate}}</span>-->
+            </div>
+            <div class="discuss-info">
+                <h4>{{value.name}}</h4>
+                <p class="discuss_list_content">{{#value.content}}</p>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!--头脑风暴页面-->
+<script type="text/html" id="activity-brain-storming">
+    <div class="teach-activity">
+        <h3 class="activity-title">头脑风暴中</h3>
+        <div class="main-wrap" style="width:960px;height:550px; margin: 0 auto; position:relative;font-size: 25px;">
+
+        </div>
+        <div class="activity-number">
+            <em id="activity-ended">{{studentNumber}}</em>/<em id="activity-count">{{studycount}}</em>
+        </div>
+    </div>
+</script>
+
+<!--一个头脑风暴-->
+<script type="text/html" id="activity-one-brain">
+    <div class="storm-box">
+        <div class="storm-detail clearfix">
+            <div class="storm-info">
+                <h4>{{name}}</h4>
+                <p class="storm-content">{{#content}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="wf-main">
+			<div class="wf-cld" style="background:{{color}};">
+				<span class="name">{{name}}</span>
+				<div class="wf-cld-cont">{{content}}</div>
+				<div class="dian_zan">
+					<i class="iconfont icon-appraise score_{{stormId}}">{{appreciate}}</i>
+				</div>
+			</div>
+		</div>-->
+</script>
+
+<!--提问中-->
+<script type="text/html" id="activity-quizing">
+    <div class="teach-activity">
+        <h3 class="activity-title">答题中</h3>
+        <div class="main-wrap" style="width:960px;height:550px; margin: 0 auto; position:relative;font-size: 25px;padding-top: 20px;">
+            <!--<img class="quiz-img"  src="{{url}}" />-->
+        </div>
+        <div class="activity-number">
+            <em id="activity-ended">{{studentNumber}}</em>/<em id="activity-count">{{studycount}}</em>
+        </div>
+    </div>
+</script>
+
+<!--提问结果分析-->
+<script type="text/html" id="activity-quiz-analysis">
+    <!--<div id="exam-analysis" class="clearfix quiz-page" style="width:100%; margin: 0 auto;">
+        <div class="test-result-wrap">
+            <h3>{{title}}</h3>
+            <div class="test-result-detail clearfix">
+                <div class="average-score">
+                    <h4>平均分</h4>
+                    <p>{{avgScore}}</p>
+                </div>
+                <div class="average-time">
+                    <h4>平均时长</h4>
+                    <P>{{#min}}{{#sec}}</P>
+                </div>
+            </div>
+            <div class="analysis-image" style="width: 90%;height: 500px;"></div>
+        </div>
+    </div>
+    <div id="question-one-analysis" class="quiz-page" style="display: none;">
+        <div class="question-analysis-image"></div>
+        <div class="analysis-answer-wrap">正确答案:<span class="correct-answer"></span></div>
+    </div>
+    <div id="question-student-result" class="quiz-page" style="display: none;"></div>-->
+</script>
+
+<!--学生答案-->
+<script type="text/html" id="quiz-student-answer">
+    <div class="main-wrap" style="padding-top: 2%;">
+        <h3 class="activity-title">{{name}}的答题卡</h3>
+
+        <div class="body-cont">
+            {{if type==2}}
+            <ul class="answer-image-ul">
+                {{each arr as value i}}
+                <li class="answer-image-li">
+                    <img src="{{value}}" />
+                </li>
+                {{/each}}
+            </ul>
+            {{else}}
+
+            <ul>
+                {{each arr as value i}}
+                <li class="que-list clearfix">
+                    <i class="que-num">{{value.num}}</i>
+                    <dl class="que-cho">
+                        {{each value.options as item}}
+                        <dd>{{#item}}</dd>
+                        {{/each}}
+                    </dl>
+                </li>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </div>
+        <div class="single-img">
+
+        </div>
+    </div>
+</script>
+
+<!--音乐播放-->
+<script type="text/html" id="music-play">
+    <div class="audio-wrap" style="width:100%;height:100%;">
+        <canvas class="audio-canvas" width="800" height="300"></canvas>
+        <audio class="audio-player" src="{{url}}"></audio>
+    </div>
+</script>
+
+<!--给学生评分-->
+<script type="text/html" id="mark-score-tips">
+    <div class="score_mask"></div>
+    <div class="score_wrap">
+        <p class="score_stu">{{name}}</p>
+        <p class="score_num">{{if score>=0}}＋{{/if}}{{score}}</p>
+    </div>
+</script>
+
+<script type="text/html" id="pk_info">
+     <div class="test-result-wrap" >
+            <h3>小组pk</h3>
+            {{each pkgroup as item i}}
+                 <ul class="pk_group" id="{{item.id}}" style="text-align:center;">
+                     <li class="first"> <span class="circle">{{i+1}}</span>、</li>
+                     <li {{if item.score>0}}class="light"{{/if}}> </li>
+                     <li {{if item.score>1}}class="light"{{/if}}></li>
+                     <li {{if item.score>2}}class="light"{{/if}}></li>
+                     <li {{if item.score>3}}class="light"{{/if}}></li>
+                     <li {{if item.score>4}}class="light"{{/if}}></li>
+                     <li {{if item.score>5}}class="light"{{/if}}></li>
+                     <li {{if item.score>6}}class="light"{{/if}}></li>
+                     <li {{if item.score>7}}class="light"{{/if}}></li>
+                     <li {{if item.score>8}}class="light"{{/if}}></li>
+                     <li {{if item.score>9}}class="light"{{/if}}></li>
+                </ul>
+            {{/each}}
+         </div>
+</script>
+
+<!--pk小组结果页-->
+<script type="text/html" id="pk_stu">
+    <div class="clearfix" id="pk_stu_analysis" >
+        <div class="test-result-wrap" >
+            <h3>小组成员</h3>
+            <ul class="shaking">
+                {{each pkUser as item}}
+                <li class="shaking-user">
+                    <img width="140" height="140" src="{{item.avator?item.avator+'/200_200.jpg':'../img/student-header.png'}}" alt="" onerror="this.src='../img/student-header.png'" />
+                    <p>{{item.name}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</script>
+    
+
+<!--升级提示-->
+<!--<script type="text/html" id="update-tips">
+    <div class="update_tips">
+        <p>{{#info}}</p>
+        <p>请前往爱班云课堂<span style="color: blue">http://www.iclassx.com</span>下载最新版本</p>
+    </div>
+</script>-->
+
+<!--学生头脑风暴页面-->
+<script type="text/html" id="activity-brain-storm">
+    <div class="brain-storm-box">
+        <div class="brain-storm-wrap">
+
+            {{each list as value i}}
+            <div class="brain-storm-list clearfix">
+                <div class="stu-pic">
+                    <img width="150" height="150" src="{{value.Avator||'../img/student-header.png'}}" alt="">
+                    <span class="score_{{value.Id}} has_score">{{value.PerformanceScore}}</span>
+                </div>
+                <div class="brain-storm-info">
+                    <h4>{{value.StuName}}</h4>
+                    <p class="brain-storm_list_content">
+                        {{value.Content}}
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="brain-storm-detail-box" style="display: none;">
+
+        </div>
+    </div>
+</script>
+
+</html>

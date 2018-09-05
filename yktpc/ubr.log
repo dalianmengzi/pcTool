@@ -1,0 +1,508 @@
+- 19:27:44.000 DEBUG: call UBRExecProcess
+- 19:27:44.016 DEBUG: call UBRCefInit
+- 19:27:45.047 DEBUG: call UBRGetCEFHandle
+- 19:27:45.047 DEBUG: call UBRGetCEFHandle
+- 19:27:45.062 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateClassInfo','%e8%bd%bb%e6%99%ba%e6%85%a7%e8%af%be%e5%a0%82') 
+- 19:27:45.062 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateIpList','192.168.31.201') 
+- 19:27:45.062 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateQRCode','0') 
+- 19:27:45.156 DEBUG: call UBRRegLoadEndCallBack
+- 19:27:45.156 DEBUG: call UBRRegDisptchCmdCallBack
+- 19:27:45.156 DEBUG: call UBRRegMainCefBrowserCreatedCallBack
+- 19:27:45.156 DEBUG: call UBRCreateCEFMainBrowser
+- 19:27:45.156 DEBUG: enter WM_SIZE
+- 19:27:45.172 INFO: main cef browser parent window created
+- 19:27:45.172 DEBUG: call UBRCreateMainCEFBrowser
+- 19:27:45.172 DEBUG: call UBRGetCEFHandle
+- 19:27:45.172 DEBUG: enter WM_SIZE
+- 19:27:45.172 DEBUG: enter WM_SIZE g_cef_handler
+- 19:27:45.218 DEBUG: call DoMainCefBrowserCreatedCallBack
+- 19:27:45.234 DEBUG: call UBRNavigatefile:///E:/yktpc/yktpc/html/1/view/index.html?classname=%e8%bd%bb%e6%99%ba%e6%85%a7%e8%af%be%e5%a0%82&ip=192.168.31.201&theme=1&network=0
+- 19:27:45.577 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 1,
+	"funcName" : "win32.theme"
+}
+- 19:28:02.191 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 2,
+	"funcName" : "win32.show"
+}
+- 19:28:11.458 DEBUG: call UBRGetCEFHandle
+- 19:28:11.458 DEBUG: enter WM_SIZE
+- 19:28:11.458 DEBUG: enter WM_SIZE g_cef_handler
+- 19:28:12.581 DEBUG: call UBRGetCEFHandle
+- 19:28:12.581 DEBUG: enter WM_SIZE
+- 19:28:12.581 DEBUG: enter WM_SIZE g_cef_handler
+- 19:28:16.169 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 3,
+	"funcName" : "win32.show"
+}
+- 19:28:30.537 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 4,
+	"funcName" : "win32.show"
+}
+- 19:28:32.736 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 5,
+	"funcName" : "win32.show"
+}
+- 19:35:06.639 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 6,
+	"funcName" : "win32.show"
+}
+- 19:35:37.574 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 7,
+	"funcName" : "win32.show"
+}
+- 19:35:50.647 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 8,
+	"funcName" : "win32.show"
+}
+- 19:36:16.449 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 9,
+	"funcName" : "win32.show"
+}
+- 19:36:16.668 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 10,
+	"funcName" : "win32.show"
+}
+- 19:36:17.229 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 11,
+	"funcName" : "win32.show"
+}
+- 19:36:17.541 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 12,
+	"funcName" : "win32.show"
+}
+- 19:36:17.744 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 13,
+	"funcName" : "win32.show"
+}
+- 19:36:18.103 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 14,
+	"funcName" : "win32.show"
+}
+- 19:36:20.069 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 15,
+	"funcName" : "win32.show"
+}
+- 19:36:20.880 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 16,
+	"funcName" : "win32.show"
+}
+- 19:36:22.034 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 17,
+	"funcName" : "win32.show"
+}
+- 19:36:22.253 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 18,
+	"funcName" : "win32.show"
+}
+- 19:36:23.235 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 19,
+	"funcName" : "win32.show"
+}
+- 19:36:23.750 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 20,
+	"funcName" : "win32.show"
+}
+- 19:36:23.953 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 21,
+	"funcName" : "win32.show"
+}
+- 19:36:24.405 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 22,
+	"funcName" : "win32.show"
+}
+- 19:36:28.352 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 23,
+	"funcName" : "win32.show"
+}
+- 19:36:28.976 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 24,
+	"funcName" : "win32.show"
+}
+- 19:44:53.639 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 25,
+	"funcName" : "win32.show"
+}
+- 19:44:53.639 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 26,
+	"funcName" : "win32.show"
+}
+- 19:44:54.232 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 27,
+	"funcName" : "win32.show"
+}
+- 19:44:55.979 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 28,
+	"funcName" : "win32.show"
+}
+- 19:44:57.290 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 29,
+	"funcName" : "win32.show"
+}
+- 19:45:00.207 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 30,
+	"funcName" : "win32.show"
+}
+- 19:45:01.346 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 31,
+	"funcName" : "win32.show"
+}
+- 19:45:02.110 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 32,
+	"funcName" : "win32.show"
+}
+- 19:45:03.686 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 33,
+	"funcName" : "win32.show"
+}
+- 19:45:08.194 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 34,
+	"funcName" : "win32.show"
+}
+- 19:45:15.932 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 35,
+	"funcName" : "win32.show"
+}
+- 19:45:15.979 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 36,
+	"funcName" : "win32.show"
+}
+- 19:45:19.270 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 37,
+	"funcName" : "win32.show"
+}
+- 19:45:20.082 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 38,
+	"funcName" : "win32.show"
+}
+- 19:45:23.997 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 39,
+	"funcName" : "win32.show"
+}
+- 19:45:24.216 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 40,
+	"funcName" : "win32.show"
+}
+- 19:45:24.871 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 41,
+	"funcName" : "win32.show"
+}
+- 19:45:25.557 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 42,
+	"funcName" : "win32.show"
+}
+- 19:45:25.916 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 43,
+	"funcName" : "win32.show"
+}
+- 19:45:26.790 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 44,
+	"funcName" : "win32.show"
+}
+- 19:45:28.942 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 45,
+	"funcName" : "win32.show"
+}
+- 19:45:29.286 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 46,
+	"funcName" : "win32.show"
+}
+- 19:45:29.301 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 47,
+	"funcName" : "win32.show"
+}
+- 19:45:29.301 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 48,
+	"funcName" : "win32.show"
+}
+- 19:45:31.048 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 49,
+	"funcName" : "win32.show"
+}
+- 19:45:31.267 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 50,
+	"funcName" : "win32.show"
+}
+- 19:45:31.267 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 51,
+	"funcName" : "win32.show"
+}
+- 19:45:32.328 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 52,
+	"funcName" : "win32.show"
+}
+- 19:45:32.593 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 53,
+	"funcName" : "win32.show"
+}
+- 19:45:32.998 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 54,
+	"funcName" : "win32.show"
+}
+- 19:45:36.680 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 55,
+	"funcName" : "win32.show"
+}
+- 19:45:36.899 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 56,
+	"funcName" : "win32.show"
+}
+- 19:45:40.986 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 57,
+	"funcName" : "win32.show"
+}
+- 19:45:44.184 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 58,
+	"funcName" : "win32.show"
+}
+- 19:45:46.929 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 59,
+	"funcName" : "win32.show"
+}
+- 19:45:51.578 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 60,
+	"funcName" : "win32.show"
+}
+- 19:45:53.762 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 61,
+	"funcName" : "win32.show"
+}
+- 19:45:54.807 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 62,
+	"funcName" : "win32.show"
+}
+- 19:45:55.790 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 63,
+	"funcName" : "win32.show"
+}
+- 19:45:56.976 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 64,
+	"funcName" : "win32.show"
+}
+- 19:45:58.255 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 65,
+	"funcName" : "win32.show"
+}
+- 19:45:59.409 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 66,
+	"funcName" : "win32.show"
+}
+- 19:46:00.735 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 67,
+	"funcName" : "win32.show"
+}
+- 19:46:01.297 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 68,
+	"funcName" : "win32.show"
+}
+- 19:46:02.077 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 69,
+	"funcName" : "win32.show"
+}
+- 19:46:02.013 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 70,
+	"funcName" : "win32.show"
+}
+- 19:46:03.668 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 71,
+	"funcName" : "win32.show"
+}
+- 19:46:04.916 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 72,
+	"funcName" : "win32.show"
+}
+- 19:46:06.258 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 73,
+	"funcName" : "win32.show"
+}
+- 19:46:06.929 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 74,
+	"funcName" : "win32.show"
+}
+- 19:46:07.475 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 75,
+	"funcName" : "win32.show"
+}
+- 19:46:10.252 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 76,
+	"funcName" : "win32.show"
+}
+- 19:46:10.922 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 77,
+	"funcName" : "win32.show"
+}
+- 19:46:11.234 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 78,
+	"funcName" : "win32.show"
+}
+- 19:46:11.796 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 79,
+	"funcName" : "win32.show"
+}
+- 19:46:12.358 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 80,
+	"funcName" : "win32.show"
+}
+- 19:46:14.370 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 81,
+	"funcName" : "win32.show"
+}
+- 19:46:16.055 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 82,
+	"funcName" : "win32.show"
+}
+- 19:46:17.069 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 83,
+	"funcName" : "win32.show"
+}
+- 19:46:17.630 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 84,
+	"funcName" : "win32.show"
+}
+- 19:46:17.036 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 85,
+	"funcName" : "win32.show"
+}
+- 19:46:18.473 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 86,
+	"funcName" : "win32.show"
+}
+- 19:46:19.549 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 87,
+	"funcName" : "win32.show"
+}
+- 19:46:19.549 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 88,
+	"funcName" : "win32.show"
+}
+- 19:46:19.643 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 89,
+	"funcName" : "win32.show"
+}
+- 19:46:19.861 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 90,
+	"funcName" : "win32.show"
+}
+- 19:46:20.641 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 91,
+	"funcName" : "win32.show"
+}
+- 19:46:21.296 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 92,
+	"funcName" : "win32.show"
+}
+- 19:46:21.593 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 93,
+	"funcName" : "win32.show"
+}
+- 19:46:21.811 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 94,
+	"funcName" : "win32.show"
+}
+- 19:46:22.108 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 95,
+	"funcName" : "win32.show"
+}
+- 19:46:22.342 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 96,
+	"funcName" : "win32.show"
+}
+- 19:46:22.466 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 97,
+	"funcName" : "win32.show"
+}
+- 19:46:22.794 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 98,
+	"funcName" : "win32.show"
+}
+- 19:46:23.106 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 99,
+	"funcName" : "win32.show"
+}
+- 19:46:23.434 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 100,
+	"funcName" : "win32.show"
+}
+- 19:46:23.683 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 101,
+	"funcName" : "win32.show"
+}
+- 19:46:24.775 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 102,
+	"funcName" : "win32.show"
+}
+- 19:46:25.134 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 103,
+	"funcName" : "win32.show"
+}
+- 19:46:25.039 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 104,
+	"funcName" : "win32.show"
+}
+- 19:46:28.504 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 105,
+	"funcName" : "win32.show"
+}
+- 19:46:36.163 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 106,
+	"funcName" : "win32.show"
+}
+- 19:46:38.207 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 107,
+	"funcName" : "win32.show"
+}
+- 19:46:39.533 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 108,
+	"funcName" : "win32.show"
+}
+- 19:46:39.751 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 109,
+	"funcName" : "win32.show"
+}
+- 19:46:40.656 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 110,
+	"funcName" : "win32.show"
+}
+- 19:46:40.906 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 111,
+	"funcName" : "win32.show"
+}
+- 19:46:40.906 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 112,
+	"funcName" : "win32.show"
+}
+- 19:46:41.124 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 113,
+	"funcName" : "win32.show"
+}
+- 19:46:41.343 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 114,
+	"funcName" : "win32.show"
+}
+- 19:46:41.701 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 115,
+	"funcName" : "win32.show"
+}
+- 19:46:42.247 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 116,
+	"funcName" : "win32.show"
+}
+- 19:46:42.544 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 117,
+	"funcName" : "win32.show"
+}
+- 19:46:42.762 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 118,
+	"funcName" : "win32.show"
+}
+- 19:46:43.542 DEBUG: ClientHandler::Execute(), message_name: {
+	"funcID" : 119,
+	"funcName" : "win32.show"
+}
+- 08:45:40.677 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateClassInfo','%e8%bd%bb%e6%99%ba%e6%85%a7%e8%af%be%e5%a0%82') 
+- 08:45:40.677 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateIpList','169.254.142.231') 
+- 08:45:40.677 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateQRCode','1') 
+- 08:45:43.688 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateClassInfo','%e8%bd%bb%e6%99%ba%e6%85%a7%e8%af%be%e5%a0%82') 
+- 08:45:43.688 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateIpList','192.168.31.201') 
+- 08:45:43.688 DEBUG: call UBRExecJSjavascript:cefHandler.call('onUpdateQRCode','2') 
+- 08:45:54.156 DEBUG: call UBRCefShutdown

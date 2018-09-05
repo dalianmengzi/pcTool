@@ -1,0 +1,46 @@
+- 19:27:44.000 ERROR: NS程序关闭，正在尝试重新启动
+- 19:27:44.000 ERROR: 启动ns失败
+- 19:27:44.000 ERROR: ra程序未正常启动，正在尝试重新启动
+- 19:27:44.000 ERROR: 启动ra失败
+- 19:27:44.000 ERROR: nginx程序关闭，正在尝试重新启动
+- 19:27:44.000 ERROR: 启动nginx失败
+- 19:27:44.000 ERROR: rtmp程序关闭，正在尝试重新启动
+- 19:27:44.000 INFO: [Util]CProcessUtils::LaunchProcess, 准备启动外部程序！"E:\yktpc\yktpc\\crtmpserver\crtmpserver.exe" crtmpserver.lua
+- 19:27:44.016 ERROR: 正在尝试重新启动Socket
+- 19:27:44.016 INFO: [Util]CProcessUtils::LaunchProcess, 准备启动外部程序！"E:\yktpc\yktpc\node_x86.exe" "E:\yktpc\yktpc\html\1\socket\app.js"
+- 19:27:44.016 INFO: CMircoDirector::create_instance()
+- 19:27:45.125 INFO: mainFrame--initApp()，初始化cef的RECT为：Left=0, Right=1366, Top=50, Bottom=718
+- 19:27:45.125 INFO: 1111
+- 19:27:45.125 INFO: 2222
+- 19:27:45.125 INFO: [Util]CProcessUtils::LaunchProcess, 准备启动外部程序！"E:\yktpc\shangke\client\ra.exe" -single
+- 19:27:45.125 ERROR: 启动raNginxNs失败 filepath=E:\yktpc\shangke\client\ra.exe
+- 19:27:45.140 INFO: BroadcastThread thread_run() begain ...... 
+
+- 19:27:45.140 INFO: CRTMPPlayerStream::StartConnection Play_Pending_Connect
+- 19:27:45.140 INFO: ================== initnum == 0
+- 19:27:45.140 INFO: RTMP_Init-Start
+- 19:27:45.140 INFO: RTMP_Init-End
+- 19:27:45.140 INFO: CRTMPPlayerStream::thread_run begin------>
+- 19:27:45.234 INFO: rtmp://192.168.31.201:6665/encoder/1000/video.mp4
+- 19:27:45.250 INFO: HandleInvoke, server invoking <_result>
+- 19:27:45.250 INFO: HandleInvoke, received result for method call <connect>
+- 19:27:45.250 INFO: HandleInvoke, server invoking <onBWDone>
+- 19:27:45.250 INFO: HandleInvoke, server invoking <_result>
+- 19:27:45.250 INFO: HandleInvoke, received result for method call <createStream>
+- 19:27:45.250 INFO: CRTMPPlayerStream::OnRTMPConnect connect Play_Connect
+- 19:27:45.312 INFO: cefBrowser-----OnAfterShow()执行！
+- 19:27:45.312 INFO: url=file:///E:/yktpc/yktpc/html/1/view/index.html?classname=%e8%bd%bb%e6%99%ba%e6%85%a7%e8%af%be%e5%a0%82&ip=192.168.31.201&theme=1&network=0
+- 19:27:45.359 INFO: cefBrowser----on_mircoDoLoadEnd()!
+- 19:27:45.733 INFO: cefBrowser----on_mircoDoLoadEnd()!
+- 08:45:54.187 INFO: killAllProcessByName执行完毕！
+- 08:45:54.203 INFO: killAllProcessByName执行完毕！
+- 08:45:54.218 INFO: CRTMPPlayerStream::StopPlayer() start ...
+- 08:45:54.234 INFO: CRTMPPlayerStream::thread_run onCloseVideo.
+- 08:45:54.234 INFO: WriteN, RTMP send error 10054 (42 bytes)
+- 08:45:54.234 INFO: ================== closenum == 0
+- 08:45:54.234 INFO: CRTMPPlayerStream::thread_run end.
+- 08:45:54.234 INFO: CRTMPPlayerStream::StopPlayer ret 1    m_Sink  0
+- 08:45:54.234 INFO: CRTMPPlayerStream::StopPlayer Play_None end.
+- 08:45:54.234 INFO: NotifyCloseStream
+
+- 08:45:54.234 INFO: CMircoDirector::destory_instance()

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window sizebox="4,4,4,4"  bktrans="true" alpha="240" size="48,134">
+	
+	<!--整个窗口的背景 -->
+	<VerticalLayout bkcolor="#FF3F475A">  
+    
+    <VerticalLayout name="group_btn_float" float="true" width="48" height="134" hole="true">
+		<Button width="48" height="67" name="btn_min_float"  normalimage=" file='image\mini_hov.png' " hotimage=" file='image\mini_nor.png' "/>
+		<Button width="48" height="67" name="closebtn_float"  normalimage=" file='image\close_hov.png' " hotimage=" file='image\close_nor.png' "/>   
+    </VerticalLayout>
+  
+	</VerticalLayout>
+</Window>
